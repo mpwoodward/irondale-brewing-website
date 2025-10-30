@@ -10,14 +10,15 @@ PATH = "content"
 
 # Tell Pelican to look for articles in the 'articles' directory
 ARTICLE_PATHS = ["articles"]
+
 # Tell Pelican to look for pages in the 'pages' directory
 PAGE_PATHS = ["pages"]
 
 # Directories that contain static files (like images) that should be copied
 # directly to the output without being processed as content.
 STATIC_PATHS = ["images"]
-TIMEZONE = "America/Los_Angeles"
 
+TIMEZONE = "America/Los_Angeles"
 DEFAULT_LANG = "en"
 
 # Feed generation is usually not desired when developing

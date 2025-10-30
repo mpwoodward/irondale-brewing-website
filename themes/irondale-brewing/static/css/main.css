@@ -290,18 +290,15 @@ footer {
 .page-header-wrapper {
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 50px !important;
+    padding-left: 50px;
     max-width: 1080px;
-    border-left-width: 2px !important;
-    border-left-color: #e94558 !important;
-    border-right: none !important;
+    border-left: 2px solid #e94558;
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
     width: 80%;
     margin: auto;
     position: relative;
-    border: 0 solid #333;
 }
 
 .page-header-content {
@@ -339,6 +336,7 @@ footer {
 
 .main-content-row {
     width: 80%;
+    max-width: 1080px;
     margin: auto;
     position: relative;
 }
@@ -378,6 +376,85 @@ article img {
     max-width: 100%;
     height: auto;
     display: block; /* Helps remove extra space below the image */
+}
+
+.contact-section-one {
+    padding: 40px 0;
+    position: relative;
+}
+
+.contact-section-one::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/brewery-17.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.contact-section-two {
+    padding: 40px 0;
+    position: relative;
+    color: #fff;
+}
+
+.contact-section-two::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/hero_bgnd_01-1.jpg');
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.contact-section-two a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.contact-section-two figcaption {
+    font-size: 0.9em;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.contact-section-two img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contact-column-left, .contact-column-right {
+    box-sizing: border-box;
+    flex: 1; /* Allow columns to share space */
+}
+
+.social-icons-container {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Clearfix for the row */
+.main-content-row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.contact-columns {
+    display: flex;
+    gap: 40px;
 }
 
 .pagination {
@@ -473,5 +550,15 @@ article img {
 @media only screen and (min-width: 768px) and (max-width: 980px) {
     .header-section {
         display: none !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .page-header-wrapper {
+        padding-left: 20px;
+        border-left-width: 2px;
+    }
+    .contact-columns {
+        flex-direction: column;
     }
 }

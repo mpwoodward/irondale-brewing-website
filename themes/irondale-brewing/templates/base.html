@@ -68,14 +68,16 @@
             {% block page_header %}
             {% endblock page_header %}
 
-            <div id="page-container" class="main-content-container">
-                <div class="main-content-section">
-                    <div class="main-content-row">
-                        {% block content %}
-                        {% endblock content %}
+            {% block main_content_area %}
+                <div id="page-container" class="main-content-container">
+                    <div class="main-content-section">
+                        <div class="main-content-row">
+                            {% block content %}
+                            {% endblock content %}
+                        </div>
                     </div>
                 </div>
-            </div>
+            {% endblock main_content_area %}
         </main>
         <footer>
             {% block footer %}
