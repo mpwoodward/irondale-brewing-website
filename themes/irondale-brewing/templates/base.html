@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+<head>
+    {% block head %}
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}{{ SITENAME|striptags }}{% endblock title %}</title>
+
+        {% if SITESUBTITLE %}
+        <meta name="description" content="{{ SITESUBTITLE }}" />
+        {% endif %}
+
+        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/main.css" />
+
+        <!-- Font links from your original site -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+        <!-- icons -->
+        <link rel="icon" href="{{ SITEURL }}/theme/images/cropped-Irondale-Brewing-Logo-square-32x32.png" sizes="32x32" />
+        <link rel="icon" href="{{ SITEURL }}/theme/images/cropped-Irondale-Brewing-Logo-square-192x192.png" sizes="192x192" />
+        <link rel="apple-touch-icon" href="{{ SITEURL }}/theme/images/cropped-Irondale-Brewing-Logo-square-180x180.png" />
+        <meta name="msapplication-TileImage" content="{{ SITEURL }}/theme/images/cropped-Irondale-Brewing-Logo-square-270x270.png" />
+    {% endblock head %}
+</head>
+
+<body>
+    {% block body %}
+        <header>
+            {% block header %}
+                <div class="header-inner-content">
+                    <div class="header-section">
+                        <div class="header-row">
+                            <div class="header-column">
+                                    <div class="header-column-image">
+                                    <a href="/">
+                                        <img fetchpriority="high" decoding="async" width="296" height="210" 
+                                            src="{{ SITEURL }}/theme/images/Irondale-Brewing-Logo-reverse-dark-backgrounds-RGB-screen-296x210.png"
+                                            alt="Irondale Brewing Logo" 
+                                            title="Irondale Brewing Logo">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endblock header %}
+            {% block nav %}
+                <div class="menu-section">
+                    <div class="menu-row">
+                        <div class="menu-wrap">
+                            <div class="primary-menu">
+                                <nav class="primary-menu-nav">
+                                    <ul>
+                                        {% for title, link in MENUITEMS %}
+                                        <li><a href="{{ link }}">{{ title }}</a></li>
+                                        {% endfor %}
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endblock nav %}
+        </header>
+        <main>
+            {% block page_header %}
+            {% endblock page_header %}
+
+            <div id="page-container" class="main-content-container">
+                <div class="main-content-section">
+                    <div class="main-content-row">
+                        {% block content %}
+                        {% endblock content %}
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            {% block footer %}
+            <div class="footer-section">
+                <div class="footer-row clearfix">
+                    <div class="footer-column footer-column-left">
+                        <p>Irondale Brewing - Forging Great Beer in <a href="https://maps.app.goo.gl/SyYWHXK5MWDjkj8bA" target="_blank">Irondale, Washington</a></p>
+                        <p>
+                            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+                                <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+                            </a>
+                        </p>
+                    </div>
+                    <div class="footer-column footer-column-right">
+                        <p style="text-align:left;">Follow Us</p>
+                        <a href="https://www.youtube.com/@irondalebrewing" target="_blank">
+                            <img src="{{ SITEURL }}/theme/images/youtube-icon-32x32.png" alt="YouTube" class="social-icon">
+                        </a>
+                        <a href="https://www.facebook.com/IrondaleBrewing" target="_blank">
+                            <img src="{{ SITEURL }}/theme/images/fb-icon-32x32.png" alt="Facebook" class="social-icon">
+                        </a>
+                        <a href="https://www.instagram.com/irondalebrewing/" target="_blank">
+                            <img src="{{ SITEURL }}/theme/images/ig-icon-32x32.png" alt="Instagram" class="social-icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-row-bottom">
+                    <p>Powered by <a href="https://getpelican.com/" target="_blank">Pelican</a>.</p>
+                </div>
+            </div>
+            {% endblock %}
+        </footer>
+    {% endblock body %}
+</body>
+</html>

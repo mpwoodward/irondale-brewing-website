@@ -1,0 +1,17 @@
+{% if DEFAULT_PAGINATION %}
+  {% set first_page = articles_paginator.page(1) %}
+  {% set last_page = articles_paginator.page(articles_paginator.num_pages) %}
+  <nav class="pagination">
+      {% if articles_page.has_previous() %}
+        <span class="pagination-item"><a href="{{ SITEURL }}/{{ first_page.url }}" alt="First Page" title="First Page">&Lang;</a></span>
+        <span class="pagination-item"><a href="{{ SITEURL }}/{{ articles_previous_page.url }}" alt="Previous Page" title="Previous Page">&lang;</a></span>
+      {% endif %}
+
+      <span>Page {{ articles_page.number }} / {{ articles_paginator.num_pages }}</span>
+
+      {% if articles_page.has_next() %}
+        <span class="pagination-item"><a href="{{ SITEURL }}/{{ articles_next_page.url }}" alt="Next Page" title="Next Page">&rang;</a></span>
+        <span class="pagination-item"><a href="{{ SITEURL }}/{{ last_page.url }}" alt="Last Page" title="Last Page">&Rang;</a></span>
+      {% endif %}
+  </nav>
+{% endif %}
