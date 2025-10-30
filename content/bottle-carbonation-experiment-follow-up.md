@@ -66,7 +66,7 @@ I of course forgot to take a photo when I finally cracked open the bottles, but 
 <!-- wp:image {"id":2971,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20231129_002612547-1280x964.jpg" class="wp-image-2971" alt="Photo of 6 beer bottles, 4 flip-tops and two with bottle caps, with green masking tape labeled &quot;S&quot; on 3 of the bottle for sugar, and &quot;CD&quot; on three of the bottles for carbonation drops" />
+<img src="/images/2023/11/PXL_20231129_002612547-1280x964.jpg" class="wp-image-2971" alt="Photo of 6 beer bottles, 4 flip-tops and two with bottle caps, with green masking tape labeled &quot;S&quot; on 3 of the bottle for sugar, and &quot;CD&quot; on three of the bottles for carbonation drops" />
 </figure>
 
 <!-- /wp:image -->

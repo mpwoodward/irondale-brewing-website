@@ -26,7 +26,7 @@ I have several different equipment options ranging from a couple of different in
 <!-- wp:image {"id":2787,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230703_221656010-1280x964.jpg" class="wp-image-2787" alt="Photo of a countertop filled with brewing equipment" />
+<img src="/images/2023/11/PXL_20230703_221656010-1280x964.jpg" class="wp-image-2787" alt="Photo of a countertop filled with brewing equipment" />
 </figure>
 
 <!-- /wp:image -->
@@ -94,7 +94,7 @@ I also noticed some condensation on my vent hood toward the end of the boil, and
 <!-- wp:image {"id":2786,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230704_010208538-1280x1700.jpg" class="wp-image-2786" alt="Photo of a small fermenter of beer immediately after pitching dry yeast" /><br />
+<img src="/images/2023/11/PXL_20230704_010208538-1280x1700.jpg" class="wp-image-2786" alt="Photo of a small fermenter of beer immediately after pitching dry yeast" /><br />
 
 <figcaption>And the yeast goes in!</figcaption>
 </figure>
@@ -128,7 +128,7 @@ The only issue I had the first time using these was a very small leak on the bot
 <!-- wp:image {"id":2772,"sizeSlug":"full","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-full">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/FB_IMG_1689727830265.jpg" class="wp-image-2772" alt="Photo of me putting a batch of beer into a one-gallon stainless steel keg" />
+<img src="/images/2023/11/FB_IMG_1689727830265.jpg" class="wp-image-2772" alt="Photo of me putting a batch of beer into a one-gallon stainless steel keg" />
 </figure>
 
 <!-- /wp:image -->
@@ -166,7 +166,7 @@ I'm really happy with this setup for one-gallon batches. So happy in fact that I
 <!-- wp:image {"id":2769,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230725_233210541.PORTRAIT-1280x964.jpg" class="wp-image-2769" alt="Photo of a one-gallon stainless steel keg with two small tasting glasses next to it" />
+<img src="/images/2023/11/PXL_20230725_233210541.PORTRAIT-1280x964.jpg" class="wp-image-2769" alt="Photo of a one-gallon stainless steel keg with two small tasting glasses next to it" />
 </figure>
 
 <!-- /wp:image -->
@@ -180,7 +180,7 @@ The day eventually came when it was time to taste the first beer made in the new
 <!-- wp:image {"id":2771,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230725_234433255.PORTRAIT-1280x1700.jpg" class="wp-image-2771" alt="Photo of a small tasting glass containing amber ale" />
+<img src="/images/2023/11/PXL_20230725_234433255.PORTRAIT-1280x1700.jpg" class="wp-image-2771" alt="Photo of a small tasting glass containing amber ale" />
 </figure>
 
 <!-- /wp:image -->

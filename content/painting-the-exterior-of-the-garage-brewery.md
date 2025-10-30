@@ -20,7 +20,7 @@ Since we *could* paint the outside of the garage/brewery we figured why not. It 
 <!-- wp:image {"id":2880,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20220625_175150714-1280x960.jpg" class="wp-image-2880" />
+<img src="/images/2023/11/PXL_20220625_175150714-1280x960.jpg" class="wp-image-2880" />
 </figure>
 
 <!-- /wp:image -->

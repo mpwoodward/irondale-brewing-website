@@ -47,22 +47,22 @@ Next up, the range hood which I think is the final thing I need before I can sta
 <!-- wp:image {"id":2796,"sizeSlug":"large","linkDestination":"none"} -->
 </p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230617_163732070-1280x964.jpg" class="wp-image-2796" />
+<img src="/images/2023/11/PXL_20230617_163732070-1280x964.jpg" class="wp-image-2796" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2797,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230617_220010846-1280x964.jpg" class="wp-image-2797" />
+<img src="/images/2023/11/PXL_20230617_220010846-1280x964.jpg" class="wp-image-2797" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2798,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230617_232429667-1280x964.jpg" class="wp-image-2798" />
+<img src="/images/2023/11/PXL_20230617_232429667-1280x964.jpg" class="wp-image-2798" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2799,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230624_161913345-1280x964.jpg" class="wp-image-2799" />
+<img src="/images/2023/11/PXL_20230624_161913345-1280x964.jpg" class="wp-image-2799" />
 </figure>
 <p><!-- /wp:image --></p>
 </figure>

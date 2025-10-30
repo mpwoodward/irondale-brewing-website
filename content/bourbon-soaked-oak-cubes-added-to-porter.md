@@ -26,7 +26,7 @@ Can't wait to see how this one comes out! I did a Stout in similar fashion a few
 <!-- wp:image {"id":2967,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20231127_002106649.PORTRAIT-1280x964.jpg" class="wp-image-2967" />
+<img src="/images/2023/11/PXL_20231127_002106649.PORTRAIT-1280x964.jpg" class="wp-image-2967" />
 </figure>
 
 <!-- /wp:image -->

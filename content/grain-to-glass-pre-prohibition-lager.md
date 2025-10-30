@@ -106,7 +106,7 @@ The concept with Pre-Prohibition Lager, as you can probably guess from the name,
 <!-- wp:image {"id":3690,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2025/03/PXL_20250304_215157499.PORTRAIT.ORIGINAL-1280x964.jpg" class="wp-image-3690" /><br />
+<img src="/images/2025/03/PXL_20250304_215157499.PORTRAIT.ORIGINAL-1280x964.jpg" class="wp-image-3690" /><br />
 
 <figcaption>A pre-Prohibition beer label from Port Townsend Brewing Co. (ca. 1915)</figcaption>
 </figure>
@@ -137,12 +137,12 @@ If you're of a certain age you may even remember the <a href="https://www.youtub
 <!-- wp:image {"id":3685,"sizeSlug":"large","linkDestination":"none"} -->
 </p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2025/03/bitter-beer-face-2.jpg" class="wp-image-3685" />
+<img src="/images/2025/03/bitter-beer-face-2.jpg" class="wp-image-3685" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":3686,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2025/03/keystone-light-least-bitter.jpg" class="wp-image-3686" />
+<img src="/images/2025/03/keystone-light-least-bitter.jpg" class="wp-image-3686" />
 </figure>
 <p><!-- /wp:image --></p>
 </figure>
@@ -446,7 +446,7 @@ For my take on a Pre-Prohibition Lager, I used RO water and started with the "Am
 <!-- wp:image {"id":3684,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2025/03/PXL_20250306_005755709.PORTRAIT-1280x1700.jpg" class="wp-image-3684" /><br />
+<img src="/images/2025/03/PXL_20250306_005755709.PORTRAIT-1280x1700.jpg" class="wp-image-3684" /><br />
 
 <figcaption>The final result!</figcaption>
 </figure>

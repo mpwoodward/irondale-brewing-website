@@ -29,12 +29,12 @@ I'm sure a real concrete person would have done better, but I'm gonna call this 
 <!-- wp:image {"id":2877,"sizeSlug":"large","linkDestination":"none"} -->
 </p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20221202_012021310-1280x960.jpg" class="wp-image-2877" />
+<img src="/images/2023/11/PXL_20221202_012021310-1280x960.jpg" class="wp-image-2877" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2876,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20221202_012027007-1280x960.jpg" class="wp-image-2876" />
+<img src="/images/2023/11/PXL_20221202_012027007-1280x960.jpg" class="wp-image-2876" />
 </figure>
 <p><!-- /wp:image --></p>
 </figure>

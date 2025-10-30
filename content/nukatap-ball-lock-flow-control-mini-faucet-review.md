@@ -20,7 +20,7 @@ Why not use the faucets that come with mini kegs? They suck. Just don't even bot
 <!-- wp:image {"id":3394,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2024/01/PXL_20240116_001911423.PORTRAIT-1280x964.jpg" class="wp-image-3394" alt="Photo of a Nukatap mini beer faucet and a Duotight flow control quick disconnect on a 1-gallon mini key with a 74g CO2 cartridge" />
+<img src="/images/2024/01/PXL_20240116_001911423.PORTRAIT-1280x964.jpg" class="wp-image-3394" alt="Photo of a Nukatap mini beer faucet and a Duotight flow control quick disconnect on a 1-gallon mini key with a 74g CO2 cartridge" />
 </figure>
 
 <!-- /wp:image -->

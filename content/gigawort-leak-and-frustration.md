@@ -53,22 +53,22 @@ All this said the Gigawort is definitely what I'll be using for my next batch, w
 <!-- wp:image {"id":2761,"sizeSlug":"large","linkDestination":"none"} -->
 </p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230911_233752486-1280x964.jpg" class="wp-image-2761" />
+<img src="/images/2023/11/PXL_20230911_233752486-1280x964.jpg" class="wp-image-2761" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2760,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230912_222332641-1280x1700.jpg" class="wp-image-2760" />
+<img src="/images/2023/11/PXL_20230912_222332641-1280x1700.jpg" class="wp-image-2760" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2759,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230911_234836389.MP_-1280x964.jpg" class="wp-image-2759" />
+<img src="/images/2023/11/PXL_20230911_234836389.MP_-1280x964.jpg" class="wp-image-2759" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2755,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230923_155412832-1280x1700.jpg" class="wp-image-2755" alt="Photo of a Gigawort electric brewing kettle" />
+<img src="/images/2023/11/PXL_20230923_155412832-1280x1700.jpg" class="wp-image-2755" alt="Photo of a Gigawort electric brewing kettle" />
 </figure>
 <p><!-- /wp:image --></p>
 </figure>

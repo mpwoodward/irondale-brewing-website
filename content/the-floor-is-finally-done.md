@@ -29,17 +29,17 @@ I really love the almost leather look it has to it, and the slight imperfections
 <!-- wp:image {"id":2838,"sizeSlug":"large","linkDestination":"none"} -->
 </p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230401_213036168-1280x1700.jpg" class="wp-image-2838" />
+<img src="/images/2023/11/PXL_20230401_213036168-1280x1700.jpg" class="wp-image-2838" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2837,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230401_213105976-1280x964.jpg" class="wp-image-2837" />
+<img src="/images/2023/11/PXL_20230401_213105976-1280x964.jpg" class="wp-image-2837" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2835,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230401_213040366-1280x1700.jpg" class="wp-image-2835" />
+<img src="/images/2023/11/PXL_20230401_213040366-1280x1700.jpg" class="wp-image-2835" />
 </figure>
 <p><!-- /wp:image --></p>
 </figure>

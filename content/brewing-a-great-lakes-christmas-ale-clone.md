@@ -284,7 +284,7 @@ I've never used T-58 so maybe this wasn't a great first use of it since I don't 
 <!-- wp:image {"id":3298,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/12/PXL_20231208_195840950-1280x964.jpg" class="wp-image-3298" alt="Photo of two small beer fermenters next to each other, with a green duct tape label on each. The label on the left fermenter is &quot;S-04&quot; and the label on the right is &quot;T-58.&quot;" />
+<img src="/images/2023/12/PXL_20231208_195840950-1280x964.jpg" class="wp-image-3298" alt="Photo of two small beer fermenters next to each other, with a green duct tape label on each. The label on the left fermenter is &quot;S-04&quot; and the label on the right is &quot;T-58.&quot;" />
 </figure>
 
 <!-- /wp:image -->
@@ -322,7 +322,7 @@ At least for the mash, I was about at the limit of what this Anvil kettle can ha
 <!-- wp:image {"id":3289,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/12/PXL_20231208_180514252-1280x1700.jpg" class="wp-image-3289" alt="Photo of a 5-gallon brew pot filled with grains in a brew bag and a plastic mash paddle across the top" />
+<img src="/images/2023/12/PXL_20231208_180514252-1280x1700.jpg" class="wp-image-3289" alt="Photo of a 5-gallon brew pot filled with grains in a brew bag and a plastic mash paddle across the top" />
 </figure>
 
 <!-- /wp:image -->
@@ -372,7 +372,7 @@ The 3500-watt induction burner is a beast, particularly with small batches like 
 <!-- wp:image {"id":3292,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/12/PXL_20231208_182616815.MP_-1280x1700.jpg" class="wp-image-3292" alt="Photo of beer boiling in a brewing kettle" />
+<img src="/images/2023/12/PXL_20231208_182616815.MP_-1280x1700.jpg" class="wp-image-3292" alt="Photo of beer boiling in a brewing kettle" />
 </figure>
 
 <!-- /wp:image -->
@@ -398,7 +398,7 @@ As I mentioned above, the unusual thing about this recipe is the fact that you a
 <!-- wp:image {"id":3290,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/12/PXL_20231208_181217281.PORTRAIT-1280x1700.jpg" class="wp-image-3290" alt="Photo of cinnamon sticks and chunks of ginger root in a small glass bowl" />
+<img src="/images/2023/12/PXL_20231208_181217281.PORTRAIT-1280x1700.jpg" class="wp-image-3290" alt="Photo of cinnamon sticks and chunks of ginger root in a small glass bowl" />
 </figure>
 
 <!-- /wp:image -->
@@ -418,7 +418,7 @@ The honey gets added at flameout because yeah, boiled honey wouldn't probably be
 <!-- wp:image {"id":3293,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/12/PXL_20231208_185201733-1280x1700.jpg" class="wp-image-3293" alt="Photo of a small plastic container of blackberry honey" />
+<img src="/images/2023/12/PXL_20231208_185201733-1280x1700.jpg" class="wp-image-3293" alt="Photo of a small plastic container of blackberry honey" />
 </figure>
 
 <!-- /wp:image -->
@@ -444,7 +444,7 @@ It's pretty cold here in Irondale these days so our ground water is downright fr
 <!-- wp:image {"id":3283,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/12/PXL_20231208_191658013-1280x1700.jpg" class="wp-image-3283" alt="Photo of a stainless steel wort chiller in a stainless steel brewing kettle" />
+<img src="/images/2023/12/PXL_20231208_191658013-1280x1700.jpg" class="wp-image-3283" alt="Photo of a stainless steel wort chiller in a stainless steel brewing kettle" />
 </figure>
 
 <!-- /wp:image -->
@@ -491,21 +491,21 @@ Couple more random photos from the brew day:
 <!-- wp:image {"id":3286,"sizeSlug":"large","linkDestination":"none"} -->
 </p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/12/PXL_20231208_162925402-1280x1700.jpg" class="wp-image-3286" alt="Photo of dry brewing grains in a stainless steel pot" /><br />
+<img src="/images/2023/12/PXL_20231208_162925402-1280x1700.jpg" class="wp-image-3286" alt="Photo of dry brewing grains in a stainless steel pot" /><br />
 
 <figcaption>The grains awaiting the mash</figcaption>
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":3285,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/12/PXL_20231208_162911631-1280x1700.jpg" class="wp-image-3285" alt="Photo of a 5-gallon stainless steel pot being filled with reverse osmosis water" /><br />
+<img src="/images/2023/12/PXL_20231208_162911631-1280x1700.jpg" class="wp-image-3285" alt="Photo of a 5-gallon stainless steel pot being filled with reverse osmosis water" /><br />
 
 <figcaption>Getting 4 gallons of RO water out of my Waterdrop filter takes a while but it's a good opportunity to get other things prepared</figcaption>
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":3291,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/12/PXL_20231208_181648401-1280x1700.jpg" class="wp-image-3291" alt="Photo of beer coming to a boil in a kettle with a lot of foam on top" /><br />
+<img src="/images/2023/12/PXL_20231208_181648401-1280x1700.jpg" class="wp-image-3291" alt="Photo of beer coming to a boil in a kettle with a lot of foam on top" /><br />
 
 <figcaption>Even at about 3.5 or so gallons for the boil in a 5.5-gallon pot I had a couple of near-boilover moments -- keep a spray bottle handy!</figcaption>
 </figure>
@@ -540,14 +540,14 @@ About 4-5 hours later the fermentation was kicking off, with the T-58 going comp
 <!-- wp:image {"id":3299,"sizeSlug":"large","linkDestination":"none"} -->
 </p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/12/PXL_20231209_011147113.MP_-1280x1700.jpg" class="wp-image-3299" alt="Photo of beer fermenting in a plastic fermenter with the label &quot;T-58&quot; on green masking tape" /><br />
+<img src="/images/2023/12/PXL_20231209_011147113.MP_-1280x1700.jpg" class="wp-image-3299" alt="Photo of beer fermenting in a plastic fermenter with the label &quot;T-58&quot; on green masking tape" /><br />
 
 <figcaption>T-58 is apparently a beast</figcaption>
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":3300,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/12/PXL_20231209_011139668-1280x1700.jpg" class="wp-image-3300" alt="Photo of beer in a plastic fermenter with the label &quot;S-04&quot; on green masking tape" /><br />
+<img src="/images/2023/12/PXL_20231209_011139668-1280x1700.jpg" class="wp-image-3300" alt="Photo of beer in a plastic fermenter with the label &quot;S-04&quot; on green masking tape" /><br />
 
 <figcaption>S-04 is off to a slower start</figcaption>
 </figure>

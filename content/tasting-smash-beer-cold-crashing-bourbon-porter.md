@@ -44,7 +44,7 @@ While we were hanging out in the brewery it was also time to cold crash the Bour
 <!-- wp:image {"id":3019,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/12/PXL_20231201_004433042.MP_-1280x1700.jpg" class="wp-image-3019" alt="Photo of me holding a one-gallon fermenter containing at batch of Bourbon Porter, and my dog Petey in the lower-left corner looking concernedly at the camera" />
+<img src="/images/2023/12/PXL_20231201_004433042.MP_-1280x1700.jpg" class="wp-image-3019" alt="Photo of me holding a one-gallon fermenter containing at batch of Bourbon Porter, and my dog Petey in the lower-left corner looking concernedly at the camera" />
 </figure>
 
 <!-- /wp:image -->

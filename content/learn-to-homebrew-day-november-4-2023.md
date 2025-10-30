@@ -71,22 +71,22 @@ As an experiment, hot on the heels of this batch I did another batch using the s
 <!-- wp:image {"id":2739,"sizeSlug":"large","linkDestination":"none"} -->
 </p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20231105_211727042-1-1280x964.jpg" class="wp-image-2739" />
+<img src="/images/2023/11/PXL_20231105_211727042-1-1280x964.jpg" class="wp-image-2739" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2741,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20231105_211739113-1280x964.jpg" class="wp-image-2741" />
+<img src="/images/2023/11/PXL_20231105_211739113-1280x964.jpg" class="wp-image-2741" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2740,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20231105_231200987-1280x964.jpg" class="wp-image-2740" />
+<img src="/images/2023/11/PXL_20231105_231200987-1280x964.jpg" class="wp-image-2740" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2742,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20231105_232931190.PORTRAIT-1280x1700.jpg" class="wp-image-2742" />
+<img src="/images/2023/11/PXL_20231105_232931190.PORTRAIT-1280x1700.jpg" class="wp-image-2742" />
 </figure>
 <p><!-- /wp:image --></p>
 </figure>

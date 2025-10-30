@@ -35,62 +35,62 @@ Once all the doors and drawers are in, I think tiling the backsplash is next!
 <!-- wp:image {"id":2832,"sizeSlug":"large","linkDestination":"none"} -->
 </p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230402_223016224-1280x964.jpg" class="wp-image-2832" />
+<img src="/images/2023/11/PXL_20230402_223016224-1280x964.jpg" class="wp-image-2832" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2831,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230411_222727002-1280x964.jpg" class="wp-image-2831" />
+<img src="/images/2023/11/PXL_20230411_222727002-1280x964.jpg" class="wp-image-2831" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2830,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230411_000922158-1280x1700.jpg" class="wp-image-2830" />
+<img src="/images/2023/11/PXL_20230411_000922158-1280x1700.jpg" class="wp-image-2830" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2829,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230410_193437435-1280x964.jpg" class="wp-image-2829" />
+<img src="/images/2023/11/PXL_20230410_193437435-1280x964.jpg" class="wp-image-2829" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2828,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230410_184923613-1280x964.jpg" class="wp-image-2828" />
+<img src="/images/2023/11/PXL_20230410_184923613-1280x964.jpg" class="wp-image-2828" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2826,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230405_010031781-1280x964.jpg" class="wp-image-2826" />
+<img src="/images/2023/11/PXL_20230405_010031781-1280x964.jpg" class="wp-image-2826" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2825,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230410_172126265-1280x1700.jpg" class="wp-image-2825" />
+<img src="/images/2023/11/PXL_20230410_172126265-1280x1700.jpg" class="wp-image-2825" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2824,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230409_225341110-1280x964.jpg" class="wp-image-2824" />
+<img src="/images/2023/11/PXL_20230409_225341110-1280x964.jpg" class="wp-image-2824" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2823,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230409_201512268-1280x964.jpg" class="wp-image-2823" />
+<img src="/images/2023/11/PXL_20230409_201512268-1280x964.jpg" class="wp-image-2823" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2822,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230405_014934673-1280x964.jpg" class="wp-image-2822" />
+<img src="/images/2023/11/PXL_20230405_014934673-1280x964.jpg" class="wp-image-2822" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2821,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230404_231613607-1280x964.jpg" class="wp-image-2821" />
+<img src="/images/2023/11/PXL_20230404_231613607-1280x964.jpg" class="wp-image-2821" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2820,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230413_031440854-1280x964.jpg" class="wp-image-2820" />
+<img src="/images/2023/11/PXL_20230413_031440854-1280x964.jpg" class="wp-image-2820" />
 </figure>
 <p><!-- /wp:image --></p>
 </figure>

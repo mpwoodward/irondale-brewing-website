@@ -32,7 +32,7 @@ How'd my versions fare compared to the original, and how did the different yeast
 <!-- wp:image {"id":3365,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2024/01/PXL_20240110_003811649.PORTRAIT-1280x964.jpg" class="wp-image-3365" alt="Photo of three Christmas ales in chalice-style glasses" />
+<img src="/images/2024/01/PXL_20240110_003811649.PORTRAIT-1280x964.jpg" class="wp-image-3365" alt="Photo of three Christmas ales in chalice-style glasses" />
 </figure>
 
 <!-- /wp:image -->
@@ -52,7 +52,7 @@ From left to right: My version with S-04 yeast, my version with T-58 yeast, and 
 <!-- wp:image {"id":3368,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2024/01/PXL_20240110_003828526.PORTRAIT.ORIGINAL-1280x1700.jpg" class="wp-image-3368" alt="Photo of Great Lakes Christmas Ale in a chalice-style glass." />
+<img src="/images/2024/01/PXL_20240110_003828526.PORTRAIT.ORIGINAL-1280x1700.jpg" class="wp-image-3368" alt="Photo of Great Lakes Christmas Ale in a chalice-style glass." />
 </figure>
 
 <!-- /wp:image -->
@@ -96,7 +96,7 @@ This is a very drinkable beer and while the holidays are in the rear-view at thi
 <!-- wp:image {"id":3366,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2024/01/PXL_20240110_003820691.PORTRAIT.ORIGINAL-1280x1700.jpg" class="wp-image-3366" alt="Photo of a homebrew Christmas ale in a chalice-style glass, made with Fermentis S-04 yeast" />
+<img src="/images/2024/01/PXL_20240110_003820691.PORTRAIT.ORIGINAL-1280x1700.jpg" class="wp-image-3366" alt="Photo of a homebrew Christmas ale in a chalice-style glass, made with Fermentis S-04 yeast" />
 </figure>
 
 <!-- /wp:image -->
@@ -134,7 +134,7 @@ This version isn't bad, but I prefer the crispness of the Great Lakes original. 
 <!-- wp:image {"id":3367,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2024/01/PXL_20240110_003824552.PORTRAIT.ORIGINAL-1280x1700.jpg" class="wp-image-3367" alt="Photo of a homebrew Christmas ale in a chalice-style glass, made with Fermentis T-58 yeast" />
+<img src="/images/2024/01/PXL_20240110_003824552.PORTRAIT.ORIGINAL-1280x1700.jpg" class="wp-image-3367" alt="Photo of a homebrew Christmas ale in a chalice-style glass, made with Fermentis T-58 yeast" />
 </figure>
 
 <!-- /wp:image -->

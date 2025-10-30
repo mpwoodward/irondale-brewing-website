@@ -74,7 +74,7 @@ So dumping that one, we move on to the Big Yeti.
 <!-- wp:image {"id":3405,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2024/01/PXL_20240125_000611058.PORTRAIT-1280x964.jpg" class="wp-image-3405" alt="Photo of a can of Big Yeti beer poured into a chalice-style glass" />
+<img src="/images/2024/01/PXL_20240125_000611058.PORTRAIT-1280x964.jpg" class="wp-image-3405" alt="Photo of a can of Big Yeti beer poured into a chalice-style glass" />
 </figure>
 
 <!-- /wp:image -->

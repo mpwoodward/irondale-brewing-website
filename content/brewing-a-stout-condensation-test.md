@@ -26,7 +26,7 @@ For this experiment I brewed a simple one-gallon all-grain <a href="https://soco
 <!-- wp:image {"id":3025,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/12/PXL_20231201_162741098-1280x964.jpg" class="wp-image-3025" alt="Photo looking down into an electric brewing kettle with a mesh bag clipped to the kettle and grains and water inside the kettle for an Irish Stout" />
+<img src="/images/2023/12/PXL_20231201_162741098-1280x964.jpg" class="wp-image-3025" alt="Photo looking down into an electric brewing kettle with a mesh bag clipped to the kettle and grains and water inside the kettle for an Irish Stout" />
 </figure>
 
 <!-- /wp:image -->
@@ -58,7 +58,7 @@ After the 60-minute mash it was time to start the boil, and everything was going
 <!-- wp:image {"id":3027,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/12/PXL_20231201_172139069.MP_-1280x964.jpg" class="wp-image-3027" alt="Photo of a batch of Irish Stout boiling in an electric brewing kettle" />
+<img src="/images/2023/12/PXL_20231201_172139069.MP_-1280x964.jpg" class="wp-image-3027" alt="Photo of a batch of Irish Stout boiling in an electric brewing kettle" />
 </figure>
 
 <!-- /wp:image -->
@@ -72,7 +72,7 @@ After boiling for about 15 minutes or so, I had my answer about the condensation
 <!-- wp:image {"id":3026,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/12/PXL_20231201_170957664-1280x964.jpg" class="wp-image-3026" alt="Photo of condensation on a stainless steel range hood" />
+<img src="/images/2023/12/PXL_20231201_170957664-1280x964.jpg" class="wp-image-3026" alt="Photo of condensation on a stainless steel range hood" />
 </figure>
 
 <!-- /wp:image -->
@@ -152,7 +152,7 @@ All my first-world condensation problems aside, the brew day came off without a 
 <!-- wp:image {"id":3020,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/12/PXL_20231201_175358151-1280x1700.jpg" class="wp-image-3020" alt="Photo of a garden hose running through an open door and up to a wort chiller in a brewing kettle" />
+<img src="/images/2023/12/PXL_20231201_175358151-1280x1700.jpg" class="wp-image-3020" alt="Photo of a garden hose running through an open door and up to a wort chiller in a brewing kettle" />
 </figure>
 
 <!-- /wp:image -->
@@ -175,14 +175,14 @@ And within a few hours, the beer seems happy.
 <!-- wp:image {"id":3021,"sizeSlug":"large","linkDestination":"none"} -->
 </p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/12/PXL_20231201_235412195.PORTRAIT-1280x1700.jpg" class="wp-image-3021" alt="Photo of a batch of stout beer in a one-gallon fermenter with foam on top" /><br />
+<img src="/images/2023/12/PXL_20231201_235412195.PORTRAIT-1280x1700.jpg" class="wp-image-3021" alt="Photo of a batch of stout beer in a one-gallon fermenter with foam on top" /><br />
 
 <figcaption>Four hours after pitching</figcaption>
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":3022,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/12/PXL_20231202_021306473.PORTRAIT-1280x1700.jpg" class="wp-image-3022" alt="Photo of a batch of Stout beer in a one-gallon fermenter with foam on top" /><br />
+<img src="/images/2023/12/PXL_20231202_021306473.PORTRAIT-1280x1700.jpg" class="wp-image-3022" alt="Photo of a batch of Stout beer in a one-gallon fermenter with foam on top" /><br />
 
 <figcaption>Seven hours after pitching</figcaption>
 </figure>

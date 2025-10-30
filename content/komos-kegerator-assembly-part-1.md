@@ -32,7 +32,7 @@ Next up in the assembly process is installing the tower, taps, and beer lines.
 <!-- wp:image {"id":3371,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2024/01/PXL_20240113_175031765-1280x1700.jpg" class="wp-image-3371" alt="Photo of a stainless steel beer tap tower, various assembly parts, and a piece of foam insulation." />
+<img src="/images/2024/01/PXL_20240113_175031765-1280x1700.jpg" class="wp-image-3371" alt="Photo of a stainless steel beer tap tower, various assembly parts, and a piece of foam insulation." />
 </figure>
 
 <!-- /wp:image -->
@@ -124,7 +124,7 @@ Keep the screws a bit loose initially and when you have them all in place, make 
 <!-- wp:image {"id":3372,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2024/01/PXL_20240113_181530005-1280x1700.jpg" class="wp-image-3372" alt="Photo of a beer tap tower installed on a kegerator with a screwdriver to the right, a piece of foam insulation to the left, and a stainless steel cap in front of the tower." />
+<img src="/images/2024/01/PXL_20240113_181530005-1280x1700.jpg" class="wp-image-3372" alt="Photo of a beer tap tower installed on a kegerator with a screwdriver to the right, a piece of foam insulation to the left, and a stainless steel cap in front of the tower." />
 </figure>
 
 <!-- /wp:image -->
@@ -138,7 +138,7 @@ Put the insulation back inside the tower, and step 1 is complete!
 <!-- wp:image {"id":3373,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2024/01/PXL_20240113_182830657-1280x1700.jpg" class="wp-image-3373" alt="Photo of a stainless steel tap tower attached to a kegerator" />
+<img src="/images/2024/01/PXL_20240113_182830657-1280x1700.jpg" class="wp-image-3373" alt="Photo of a stainless steel tap tower attached to a kegerator" />
 </figure>
 
 <!-- /wp:image -->
@@ -206,7 +206,7 @@ To cut the lines, I used <a href="https://www.morebeer.com/products/tube-cutter-
 <!-- wp:image {"id":3390,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2024/01/PXL_20240115_181853416-1280x1700.jpg" class="wp-image-3390" alt="Photo of a small cutting tool for EVABarrier plastic tubing" />
+<img src="/images/2024/01/PXL_20240115_181853416-1280x1700.jpg" class="wp-image-3390" alt="Photo of a small cutting tool for EVABarrier plastic tubing" />
 </figure>
 
 <!-- /wp:image -->
@@ -226,7 +226,7 @@ Next, feed the beer line up through the kegerator into the tower. I first tried 
 <!-- wp:image {"id":3377,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2024/01/PXL_20240113_201116261-1280x1700.jpg" class="wp-image-3377" alt="Photo of a beer line wrapped with a small piece of red masking tape protruding from the top of a stainless steel beer tower" />
+<img src="/images/2024/01/PXL_20240113_201116261-1280x1700.jpg" class="wp-image-3377" alt="Photo of a beer line wrapped with a small piece of red masking tape protruding from the top of a stainless steel beer tower" />
 </figure>
 
 <!-- /wp:image -->
@@ -246,7 +246,7 @@ I started with the lower left tap and did each line all the way through, includi
 <!-- wp:image {"id":3376,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2024/01/PXL_20240113_200912594-1280x1700.jpg" class="wp-image-3376" alt="Photo of a piece of beer line, a kegerator assembly manual, and a small roll of red masking tape on top of a kegerator" />
+<img src="/images/2024/01/PXL_20240113_200912594-1280x1700.jpg" class="wp-image-3376" alt="Photo of a piece of beer line, a kegerator assembly manual, and a small roll of red masking tape on top of a kegerator" />
 </figure>
 
 <!-- /wp:image -->
@@ -287,49 +287,49 @@ You don't have to really crank this down, but you'll want to tighten it enough t
 <!-- wp:image {"id":3378,"sizeSlug":"large","linkDestination":"none"} -->
 </p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2024/01/PXL_20240113_202359639.MP_-1280x1700.jpg" class="wp-image-3378" alt="Photo of the inside of a beer tower showing a shank nut and collar tightened against the tower" /><br />
+<img src="/images/2024/01/PXL_20240113_202359639.MP_-1280x1700.jpg" class="wp-image-3378" alt="Photo of the inside of a beer tower showing a shank nut and collar tightened against the tower" /><br />
 
 <figcaption>Inside of tower with shank nut and collar, not fully tightened</figcaption>
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":3379,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2024/01/PXL_20240113_202402643-1280x1700.jpg" class="wp-image-3379" alt="Photo of the outside of a beer tower with a single tap shank installed" /><br />
+<img src="/images/2024/01/PXL_20240113_202402643-1280x1700.jpg" class="wp-image-3379" alt="Photo of the outside of a beer tower with a single tap shank installed" /><br />
 
 <figcaption>Outside shot of first shank installed</figcaption>
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":3380,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2024/01/PXL_20240113_204708125-1280x964.jpg" class="wp-image-3380" alt="Photo of inside of a beer tap tower with a second beer line installed" /><br />
+<img src="/images/2024/01/PXL_20240113_204708125-1280x964.jpg" class="wp-image-3380" alt="Photo of inside of a beer tap tower with a second beer line installed" /><br />
 
 <figcaption>Inside the beer tower with the second shank installed</figcaption>
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":3381,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2024/01/PXL_20240113_204712353-1280x1700.jpg" class="wp-image-3381" alt="Photo of the outside of a beer tower with two shanks installed" /><br />
+<img src="/images/2024/01/PXL_20240113_204712353-1280x1700.jpg" class="wp-image-3381" alt="Photo of the outside of a beer tower with two shanks installed" /><br />
 
 <figcaption>The first two shanks installed</figcaption>
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":3382,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2024/01/PXL_20240113_211704878-1280x1700.jpg" class="wp-image-3382" alt="Photo of the outside of a beer tower with four shanks installed" /><br />
+<img src="/images/2024/01/PXL_20240113_211704878-1280x1700.jpg" class="wp-image-3382" alt="Photo of the outside of a beer tower with four shanks installed" /><br />
 
 <figcaption>All four shanks installed</figcaption>
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":3383,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2024/01/PXL_20240113_211715607-1280x1700.jpg" class="wp-image-3383" alt="Photo of the inside of a beer tower with four beer lines installed" /><br />
+<img src="/images/2024/01/PXL_20240113_211715607-1280x1700.jpg" class="wp-image-3383" alt="Photo of the inside of a beer tower with four beer lines installed" /><br />
 
 <figcaption>Inside shot with all four shanks installed</figcaption>
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":3389,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2024/01/PXL_20240115_181819538-1280x1700.jpg" class="wp-image-3389" alt="Photo of four beer lines marked with colored masking tape draped on the inside of a kegerator" /><br />
+<img src="/images/2024/01/PXL_20240115_181819538-1280x1700.jpg" class="wp-image-3389" alt="Photo of four beer lines marked with colored masking tape draped on the inside of a kegerator" /><br />
 
 <figcaption>The marked beer lines, awaiting kegs and beer</figcaption>
 </figure>
@@ -365,7 +365,7 @@ The assembly instructions indicate that you're supposed to tighten the faucet to
 <!-- wp:image {"id":3384,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2024/01/PXL_20240113_212357158-1280x1700.jpg" class="wp-image-3384" alt="Photo of a beer tower with four faucets installed" />
+<img src="/images/2024/01/PXL_20240113_212357158-1280x1700.jpg" class="wp-image-3384" alt="Photo of a beer tower with four faucets installed" />
 </figure>
 
 <!-- /wp:image -->
@@ -385,7 +385,7 @@ And the easiest step comes last -- installing the tap handles! In anticipation o
 <!-- wp:image {"id":3385,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2024/01/PXL_20240113_212754126.MP_-1280x1700.jpg" class="wp-image-3385" alt="Photo of a four-tap stainless steel beer tower on a kegerator with Irondale Brewing tap handles" />
+<img src="/images/2024/01/PXL_20240113_212754126.MP_-1280x1700.jpg" class="wp-image-3385" alt="Photo of a four-tap stainless steel beer tower on a kegerator with Irondale Brewing tap handles" />
 </figure>
 
 <!-- /wp:image -->
@@ -417,7 +417,7 @@ Of course to be able to actually serve beer we'll need to install the gas lines.
 <!-- wp:image {"id":3391,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2024/01/PXL_20240115_182019451-1280x964.jpg" class="wp-image-3391" alt="Photo of one black and one gray threaded ball lock disconnects" />
+<img src="/images/2024/01/PXL_20240115_182019451-1280x964.jpg" class="wp-image-3391" alt="Photo of one black and one gray threaded ball lock disconnects" />
 </figure>
 
 <!-- /wp:image -->
@@ -443,7 +443,7 @@ And I suppose I'll need some beer too so the new kegs aren't so sad. An empty ke
 <!-- wp:image {"id":3374,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2024/01/PXL_20240113_193702052-1280x964.jpg" class="wp-image-3374" alt="Photo of four 2.5-gallon Torpedo kegs" />
+<img src="/images/2024/01/PXL_20240113_193702052-1280x964.jpg" class="wp-image-3374" alt="Photo of four 2.5-gallon Torpedo kegs" />
 </figure>
 
 <!-- /wp:image -->

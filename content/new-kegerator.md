@@ -20,7 +20,7 @@ There's a fair amount of assembly to do but since it has to sit for at least 24 
 <!-- wp:image {"id":3356} -->
 
 <figure class="wp-block-image">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/12/PXL_20231230_185750166-1280x964.jpg" class="wp-image-3356" alt="Photo of a box of kegerator parts including hoses and tap faucets" />
+<img src="/images/2023/12/PXL_20231230_185750166-1280x964.jpg" class="wp-image-3356" alt="Photo of a box of kegerator parts including hoses and tap faucets" />
 </figure>
 
 <!-- /wp:image -->
@@ -50,7 +50,7 @@ Until now I've been using 1-gallon <a href="https://www.northernbrewer.com/produ
 <!-- wp:image {"id":3360,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/12/PXL_20230101_155720916-1280x1700.jpg" class="wp-image-3360" alt="Photo of a tap handle from Irondale Brewing with the brand’s logo at the top and the word &#39;IRNDL&#39; vertically spelled in large, black, 3D letters against a wooden background." />
+<img src="/images/2023/12/PXL_20230101_155720916-1280x1700.jpg" class="wp-image-3360" alt="Photo of a tap handle from Irondale Brewing with the brand’s logo at the top and the word &#39;IRNDL&#39; vertically spelled in large, black, 3D letters against a wooden background." />
 </figure>
 
 <!-- /wp:image -->

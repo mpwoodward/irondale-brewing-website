@@ -35,21 +35,21 @@ Quick brew day, quick post! We'll see how this one tastes in a few weeks. Cheers
 <!-- wp:image {"id":3337,"sizeSlug":"large","linkDestination":"none"} -->
 </p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/12/PXL_20231222_171053738-1280x1700.jpg" class="wp-image-3337" alt="Photo of a two-gallon pot on a small induction cooktop" /><br />
+<img src="/images/2023/12/PXL_20231222_171053738-1280x1700.jpg" class="wp-image-3337" alt="Photo of a two-gallon pot on a small induction cooktop" /><br />
 
 <figcaption>The two-gallon MegaPot and my smaller induction burner were great for this batch</figcaption>
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":3338,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/12/PXL_20231222_171100186-1280x1700.jpg" class="wp-image-3338" alt="Photo of a two-gallon pot of boiling wort" /><br />
+<img src="/images/2023/12/PXL_20231222_171100186-1280x1700.jpg" class="wp-image-3338" alt="Photo of a two-gallon pot of boiling wort" /><br />
 
 <figcaption>The fabulous smell of Northern Brewer and Citra hops boiling</figcaption>
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":3339,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/12/PXL_20231222_175022464-1280x1700.jpg" class="wp-image-3339" alt="Photo of a two-gallon pot with a small copper immersion chiller in it" /><br />
+<img src="/images/2023/12/PXL_20231222_175022464-1280x1700.jpg" class="wp-image-3339" alt="Photo of a two-gallon pot with a small copper immersion chiller in it" /><br />
 
 <figcaption>Chilling things down</figcaption>
 </figure>

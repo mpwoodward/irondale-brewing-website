@@ -71,77 +71,77 @@ So from near catastrophe, to hours of panicked mopping, to the finishing steps, 
 <!-- wp:image {"id":2844,"sizeSlug":"large","linkDestination":"none"} -->
 </p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230314_222543988.MP_-1280x1707.jpg" class="wp-image-2844" />
+<img src="/images/2023/11/PXL_20230314_222543988.MP_-1280x1707.jpg" class="wp-image-2844" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2854,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230318_192443772-1280x964.jpg" class="wp-image-2854" />
+<img src="/images/2023/11/PXL_20230318_192443772-1280x964.jpg" class="wp-image-2854" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2848,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230320_223907048-1280x1700.jpg" class="wp-image-2848" />
+<img src="/images/2023/11/PXL_20230320_223907048-1280x1700.jpg" class="wp-image-2848" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2856,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230322_234004331-1280x1700.jpg" class="wp-image-2856" />
+<img src="/images/2023/11/PXL_20230322_234004331-1280x1700.jpg" class="wp-image-2856" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2851,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230322_233956249-1280x964.jpg" class="wp-image-2851" />
+<img src="/images/2023/11/PXL_20230322_233956249-1280x964.jpg" class="wp-image-2851" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2849,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230320_223912873-1280x1700.jpg" class="wp-image-2849" />
+<img src="/images/2023/11/PXL_20230320_223912873-1280x1700.jpg" class="wp-image-2849" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2855,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230321_174629673-1280x964.jpg" class="wp-image-2855" />
+<img src="/images/2023/11/PXL_20230321_174629673-1280x964.jpg" class="wp-image-2855" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2850,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230321_174647867-1280x1700.jpg" class="wp-image-2850" />
+<img src="/images/2023/11/PXL_20230321_174647867-1280x1700.jpg" class="wp-image-2850" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2847,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230319_175949304-1280x1700.jpg" class="wp-image-2847" />
+<img src="/images/2023/11/PXL_20230319_175949304-1280x1700.jpg" class="wp-image-2847" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2846,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230319_175938033-1280x964.jpg" class="wp-image-2846" />
+<img src="/images/2023/11/PXL_20230319_175938033-1280x964.jpg" class="wp-image-2846" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2853,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230330_021030435-1280x1700.jpg" class="wp-image-2853" />
+<img src="/images/2023/11/PXL_20230330_021030435-1280x1700.jpg" class="wp-image-2853" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2852,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230330_021021550-1280x1700.jpg" class="wp-image-2852" />
+<img src="/images/2023/11/PXL_20230330_021021550-1280x1700.jpg" class="wp-image-2852" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2838,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230401_213036168-1280x1700.jpg" class="wp-image-2838" />
+<img src="/images/2023/11/PXL_20230401_213036168-1280x1700.jpg" class="wp-image-2838" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2842,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230325_001258599-1280x964.jpg" class="wp-image-2842" />
+<img src="/images/2023/11/PXL_20230325_001258599-1280x964.jpg" class="wp-image-2842" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2843,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230325_001313408-1280x1700.jpg" class="wp-image-2843" />
+<img src="/images/2023/11/PXL_20230325_001313408-1280x1700.jpg" class="wp-image-2843" />
 </figure>
 <p><!-- /wp:image --></p>
 </figure>

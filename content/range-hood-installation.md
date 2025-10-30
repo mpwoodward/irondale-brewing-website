@@ -26,7 +26,7 @@ And now, I can brew!
 <!-- wp:image {"id":2791,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20230701_224034788-1-1280x1700.jpg" class="wp-image-2791" alt="Photo of a range hood being installed" />
+<img src="/images/2023/11/PXL_20230701_224034788-1-1280x1700.jpg" class="wp-image-2791" alt="Photo of a range hood being installed" />
 </figure>
 
 <!-- /wp:image -->

@@ -17,32 +17,32 @@ For whatever reason I didn't get many photos while we were painting the inside o
 <!-- wp:image {"id":2890,"sizeSlug":"large","linkDestination":"none"} -->
 </p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20220317_015054554-1280x960.jpg" class="wp-image-2890" />
+<img src="/images/2023/11/PXL_20220317_015054554-1280x960.jpg" class="wp-image-2890" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2889,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20220317_015047267-1280x960.jpg" class="wp-image-2889" />
+<img src="/images/2023/11/PXL_20220317_015047267-1280x960.jpg" class="wp-image-2889" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2885,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20220417_181304858-1280x960.jpg" class="wp-image-2885" />
+<img src="/images/2023/11/PXL_20220417_181304858-1280x960.jpg" class="wp-image-2885" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2891,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20220416_005822440.MP_-1280x960.jpg" class="wp-image-2891" />
+<img src="/images/2023/11/PXL_20220416_005822440.MP_-1280x960.jpg" class="wp-image-2891" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2888,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20220417_181359183-1280x960.jpg" class="wp-image-2888" />
+<img src="/images/2023/11/PXL_20220417_181359183-1280x960.jpg" class="wp-image-2888" />
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":2887,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2023/11/PXL_20220417_181322022.MP_-1280x960.jpg" class="wp-image-2887" />
+<img src="/images/2023/11/PXL_20220417_181322022.MP_-1280x960.jpg" class="wp-image-2887" />
 </figure>
 <p><!-- /wp:image --></p>
 </figure>

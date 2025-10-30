@@ -54,7 +54,7 @@ I'll point out just a couple of things -- one is the <a href="https://www.morebe
 <!-- wp:image {"id":3386,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2024/01/PXL_20240114_143413492-1280x964.jpg" class="wp-image-3386" alt="Photo of a plastic carbonation cap, which is a screw-on cap the size of a soda bottle cap that has a barb coming out one end, and has a ball lock fitting on the other end" />
+<img src="/images/2024/01/PXL_20240114_143413492-1280x964.jpg" class="wp-image-3386" alt="Photo of a plastic carbonation cap, which is a screw-on cap the size of a soda bottle cap that has a barb coming out one end, and has a ball lock fitting on the other end" />
 </figure>
 
 <!-- /wp:image -->

@@ -344,7 +344,7 @@ I mounted the fans to either side of the cooling panel on the back wall of the f
 <!-- wp:image {"id":3413,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2024/01/PXL_20240128_161345035.MP_-1280x1700.jpg" class="wp-image-3413" alt="Photo of two 5&quot; AC Infinity computer cooling fans mounted on the back wall of an upright freezer" />
+<img src="/images/2024/01/PXL_20240128_161345035.MP_-1280x1700.jpg" class="wp-image-3413" alt="Photo of two 5&quot; AC Infinity computer cooling fans mounted on the back wall of an upright freezer" />
 </figure>
 
 <!-- /wp:image -->
@@ -382,7 +382,7 @@ To mount the mat, which is a bit heavy, I used industrial velcro across the widt
 <!-- wp:image {"id":3411,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2024/01/PXL_20240127_232920196-1280x1700.jpg" class="wp-image-3411" alt="Photo of a 48&quot; x 20.75&quot; heating mat attached to the inside of an upright freezer door" />
+<img src="/images/2024/01/PXL_20240127_232920196-1280x1700.jpg" class="wp-image-3411" alt="Photo of a 48&quot; x 20.75&quot; heating mat attached to the inside of an upright freezer door" />
 </figure>
 
 <!-- /wp:image -->
@@ -408,7 +408,7 @@ The dehumidifer has a hook on the top so it could be hung on one of the walls wi
 <!-- wp:image {"id":3416,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2024/01/PXL_20240128_161439630-1280x964.jpg" class="wp-image-3416" alt="Photo of an Eva-Dry 500 dehumidifier in the bottom basket of an upright freezer" />
+<img src="/images/2024/01/PXL_20240128_161439630-1280x964.jpg" class="wp-image-3416" alt="Photo of an Eva-Dry 500 dehumidifier in the bottom basket of an upright freezer" />
 </figure>
 
 <!-- /wp:image -->
@@ -434,7 +434,7 @@ Again, this is optional, but I love these little WiFi Inkbird sensors so I figur
 <!-- wp:image {"id":3415,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2024/01/PXL_20240128_161415179-1280x1700.jpg" class="wp-image-3415" alt="Photo of a small Inkbird temperature and humidity sensor mounted to the inside wall of an upright freezer" />
+<img src="/images/2024/01/PXL_20240128_161415179-1280x1700.jpg" class="wp-image-3415" alt="Photo of a small Inkbird temperature and humidity sensor mounted to the inside wall of an upright freezer" />
 </figure>
 
 <!-- /wp:image -->
@@ -463,14 +463,14 @@ Moving to the outside, I hung the brains of the system -- i.e., the Inkbird temp
 <!-- wp:image {"id":3435,"sizeSlug":"large","linkDestination":"none"} -->
 </p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2024/01/PXL_20240131_000655749.MP_-1280x1700.jpg" class="wp-image-3435" alt="Photo of an Inkbird WiFi temperature controller" /><br />
+<img src="/images/2024/01/PXL_20240131_000655749.MP_-1280x1700.jpg" class="wp-image-3435" alt="Photo of an Inkbird WiFi temperature controller" /><br />
 
 <figcaption>The brains of the fermentation chamber</figcaption>
 </figure>
 <p><!-- /wp:image --></p>
 <p><!-- wp:image {"id":3412,"sizeSlug":"large","linkDestination":"none"} --></p>
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2024/01/PXL_20240127_235039665-1280x1700.jpg" class="wp-image-3412" alt="Photo of a small command strip hook mounted on the outside wall of an upright freezer" /><br />
+<img src="/images/2024/01/PXL_20240127_235039665-1280x1700.jpg" class="wp-image-3412" alt="Photo of a small command strip hook mounted on the outside wall of an upright freezer" /><br />
 
 <figcaption>Small command hook to hang the temperature controller</figcaption>
 </figure>
@@ -488,7 +488,7 @@ The functionality of these controllers is pretty simple. There are two electrica
 <!-- wp:image {"id":3436,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2024/01/PXL_20240131_000743800-1280x964.jpg" class="wp-image-3436" alt="Photo of the cooling and heating electrical plugs on an Inkbird temperature controller" />
+<img src="/images/2024/01/PXL_20240131_000743800-1280x964.jpg" class="wp-image-3436" alt="Photo of the cooling and heating electrical plugs on an Inkbird temperature controller" />
 </figure>
 
 <!-- /wp:image -->
@@ -514,7 +514,7 @@ I also set the refrigeration delay to 5 minutes to be a bit nicer to the freezer
 <!-- wp:image {"id":3440,"width":"823px","height":"auto","sizeSlug":"full","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-full is-resized">
-<img src="https://irondalebrewing.com/wp-content/uploads/2024/01/Screenshot_20240130-162348.png" class="wp-image-3440" style="width:823px;height:auto" alt="Screenshot of settings for the Inkbird temperature controller in the mobile app" />
+<img src="/images/2024/01/Screenshot_20240130-162348.png" class="wp-image-3440" style="width:823px;height:auto" alt="Screenshot of settings for the Inkbird temperature controller in the mobile app" />
 </figure>
 
 <!-- /wp:image -->
@@ -534,7 +534,7 @@ In the app you can also check the current status remotely, which I do a bit obse
 <!-- wp:image {"id":3441,"sizeSlug":"full","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-full">
-<img src="https://irondalebrewing.com/wp-content/uploads/2024/01/Screenshot_20240130-162404.png" class="wp-image-3441" alt="Photo of the current temperature screen in the Inkbird mobile app" />
+<img src="/images/2024/01/Screenshot_20240130-162404.png" class="wp-image-3441" alt="Photo of the current temperature screen in the Inkbird mobile app" />
 </figure>
 
 <!-- /wp:image -->
@@ -572,7 +572,7 @@ Over the course of two days of fermentation it's been remarkably stable in the 6
 <!-- wp:image {"id":3439,"sizeSlug":"full","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-full">
-<img src="https://irondalebrewing.com/wp-content/uploads/2024/01/Screenshot_20240130-050155.png" class="wp-image-3439" alt="Screenshot of a line chart showing a stable fermentation temperature of around 67 degrees over the course of several hours" />
+<img src="/images/2024/01/Screenshot_20240130-050155.png" class="wp-image-3439" alt="Screenshot of a line chart showing a stable fermentation temperature of around 67 degrees over the course of several hours" />
 </figure>
 
 <!-- /wp:image -->
@@ -598,7 +598,7 @@ For the batch that's currently fermenting (an American Red Ale) I'm using a 3-ga
 <!-- wp:image {"id":3437,"sizeSlug":"large","linkDestination":"none"} -->
 
 <figure class="wp-block-image size-large">
-<img src="https://irondalebrewing.com/wp-content/uploads/2024/01/PXL_20240129_001240432-1280x1700.jpg" class="wp-image-3437" alt="Photo of a plastic fermenter with a batch of beer inside it, and a temperature probe taped to the side underneath a folded paper towel" />
+<img src="/images/2024/01/PXL_20240129_001240432-1280x1700.jpg" class="wp-image-3437" alt="Photo of a plastic fermenter with a batch of beer inside it, and a temperature probe taped to the side underneath a folded paper towel" />
 </figure>
 
 <!-- /wp:image -->
