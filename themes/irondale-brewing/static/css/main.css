@@ -35,7 +35,7 @@ header {
 
 h1 {
     font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
-    font-size: 30px;
+    font-size: 40px;
     color: #333;
 }
 
@@ -281,7 +281,6 @@ footer {
 .page-header-section {
     padding-top: 10px;
     padding-bottom: 10px;
-    background-image: url('../images/hero_inner_beer_01-1.jpg') !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
@@ -372,6 +371,13 @@ footer {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+/* Ensure all images within an article's content are responsive */
+article img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Helps remove extra space below the image */
 }
 
 .pagination {

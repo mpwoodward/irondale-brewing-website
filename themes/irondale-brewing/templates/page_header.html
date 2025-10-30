@@ -1,8 +1,25 @@
-<div class="page-header-section">
-    <div class="page-header-wrapper">
-        <div class="page-header-content">
-            <h4>"They who drink beer will think beer." - Washington Irving</h4>
-            <h1>Irondale Brewing</h1>
+{% macro render_header(content_object=None) %}
+    {% if content_object and content_object.pageheaderimage %}
+    <div class="page-header-section" style="background-image: url('{{ SITEURL }}{{ content_object.pageheaderimage }}');">
+    {% else %}
+    <div class="page-header-section" style="background-image: url('{{ SITEURL }}/theme/images/hero_inner_beer_01-1.jpg');">
+    {% endif %}
+        <div class="page-header-wrapper">
+            <div class="page-header-content">
+                {% if content_object and content_object.pagequote %}
+                    <h4>{{ content_object.pagequote }}</h4>
+                {% elif not content_object %}
+                    <h4>"They who drink beer will think beer." - Washington Irving</h4>
+                {% endif %}
+    
+                {% if content_object and content_object.pagetitle %}
+                    <h1>{{ content_object.pagetitle }}</h1>
+                {% elif content_object %}
+                    <h1>{{ content_object.title }}</h1>
+                {% else %}
+                    <h1>Irondale Brewing</h1>
+                {% endif %}
+            </div>
         </div>
     </div>
-</div>
+{% endmacro %}
