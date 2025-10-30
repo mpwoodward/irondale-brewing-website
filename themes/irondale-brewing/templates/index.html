@@ -12,7 +12,9 @@
         <article class="article-summary-container">
             <section>
                 <a href="{{ SITEURL }}/{{ article.url }}" class="featured-image-url" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
-                    <img src="{{ article.featuredimage }}" />
+                    <div class="featured-image-container">
+                        <img src="{{ article.featuredimage }}" />
+                    </div>
                 </a>
             </section>
             <header>

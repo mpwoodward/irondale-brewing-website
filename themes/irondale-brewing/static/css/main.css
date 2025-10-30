@@ -368,6 +368,12 @@ footer {
     border: 0 solid #333;
 }
 
+.featured-image-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .pagination {
     display: flex;
     -webkit-box-align: center;
