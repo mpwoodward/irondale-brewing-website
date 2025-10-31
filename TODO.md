@@ -1,2 +1,9 @@
-# Articles to Recreate
-* https://irondalebrewing.com/2023/04/06/brewery-build-out-photos/
+# Article Template
+- Add date and categories as subtitle below title (e.g., Jan 22, 2023 | Homebrewing, Brewing Space)
+
+# Article List Page
+- Padding at bottom of posts is a bit large
+- Add category output
+
+# Future Stuff
+- Look into improving quality of thumbnails
