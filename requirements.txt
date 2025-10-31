@@ -2,3 +2,6 @@ pelican[markdown]
 BeautifulSoup4
 lxml
 requests
+pelican-photos
+pelican-jinja2content
+python-slugify

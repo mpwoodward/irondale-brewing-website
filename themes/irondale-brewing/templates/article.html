@@ -22,6 +22,23 @@
 
     {{ article.content }}
 
+    {% if article.photo_gallery %}
+      {% for gallery in article.photo_gallery %}
+        <div class="photo-gallery">
+            <h3>{{ gallery.0 }}</h3>
+            <div class="gallery-images">
+                {% for title, full_path, thumb_path, exif, caption in gallery.1 %}
+                    <a href="{{ SITEURL }}/{{ full_path }}" 
+                      data-lightbox="gallery-{{ gallery.0 | slugify }}" 
+                      data-title="{{ caption or title }}">
+                        <img src="{{ SITEURL }}/{{ thumb_path }}" alt="{{ caption or title }}">
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+      {% endfor %}
+    {% endif %}
+
     {% if article.modified %}
       <footer>
         <p>Last updated: <time datetime="{{ article.modified.isoformat() }}">{{ article.locale_modified }}</time></p>

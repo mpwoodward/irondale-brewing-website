@@ -12,12 +12,15 @@
 
         <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/main.css" />
 
-        <!-- Font links from your original site -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-        <!-- icons -->
+        <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css" />
+        
+        <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-thumbnail.min.css" />
+        <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-zoom.min.css" />
+
         <link rel="icon" href="{{ SITEURL }}/theme/images/cropped-Irondale-Brewing-Logo-square-32x32.png" sizes="32x32" />
         <link rel="icon" href="{{ SITEURL }}/theme/images/cropped-Irondale-Brewing-Logo-square-192x192.png" sizes="192x192" />
         <link rel="apple-touch-icon" href="{{ SITEURL }}/theme/images/cropped-Irondale-Brewing-Logo-square-180x180.png" />
@@ -33,7 +36,7 @@
                     <div class="header-section">
                         <div class="header-row">
                             <div class="header-column">
-                                    <div class="header-column-image">
+                                <div class="header-column-image">
                                     <a href="/">
                                         <img fetchpriority="high" decoding="async" width="296" height="210" 
                                             src="{{ SITEURL }}/theme/images/Irondale-Brewing-Logo-reverse-dark-backgrounds-RGB-screen-296x210.png"
@@ -111,5 +114,23 @@
             {% endblock %}
         </footer>
     {% endblock body %}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/zoom/lg-zoom.min.js"></script>
+    
+    <script type="text/javascript">
+        // 🚨 CRITICAL FIX: The selector must match the class used in article.html (.gallery-images)
+        // The .photos class is incorrect and causes the script to find nothing.
+        const galleries = document.querySelectorAll('.photo-gallery'); 
+        
+        for (let i = 0; i < galleries.length; i++) {
+            lightGallery(galleries[i], { 
+                selector: '.gallery-images a', // Target <a> tags inside the inner container
+                plugins: [lgZoom, lgThumbnail] // Initialize the plugins
+            });
+        }
+    </script>
 </body>
 </html>

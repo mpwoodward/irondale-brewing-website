@@ -1,8 +1,12 @@
 from datetime import date
+from slugify import slugify
 
 AUTHOR = "Matt Woodward"
 SITENAME = "Irondale Brewing"
-SITEURL = "https://irondalebrewing.com" # Set for local development with pelican --listen
+# SITEURL is set in publishconf.py for production.
+# For local development, it's best to leave it empty.
+# When you run `pelican --listen`, it will default to http://localhost:8000
+SITEURL = ""
 
 THEME = "themes/irondale-brewing"
 
@@ -50,11 +54,40 @@ MENUITEMS = (
     ("Contact", "/pages/contact.html"),
 )
 
+# Plugin Configuration - Use the namespace plugin syntax for pip-installed plugins
+PLUGINS = [
+    "jinja2content",
+    "photos",
+]
+
+# Jinja filters
+JINJA_FILTERS = {
+    "slugify": slugify,
+}
+
+# pelican-photos configuration
+PHOTO_LIBRARY = "content/images"
+PHOTO_GALLERY = (1024, 768, 80) # (width, height, quality)
+PHOTO_THUMBNAIL = (280, 210, 80) # (width, height, quality)
+PHOTO_RESIZE_JOBS = 5 # Number of parallel jobs to resize images
+PHOTO_LIGHTBOX_GALLERY_ATTR = "data-lightgallery" # To integrate with lightgallery.js
+
 # Make the current year available to templates
 JINJA_GLOBALS = {"CURRENT_YEAR": date.today().year}
+
+# Markdown settings
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'css_class': 'highlight'},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+    },
+    'output_format': 'html5',
+}
 
 # Pagination
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
+# This is recommended for local development. It is set to False in publishconf.py
 RELATIVE_URLS = True
