@@ -28,7 +28,7 @@ Bearing in mind the Nukatap faucet is mostly plastic, it has a very nice feel to
 
 How does it pour? Take a look! (And like/subscribe/share and all that jazz, it's my first video!)
 
-<iframe width="100%" height="583" src="https://www.youtube.com/embed/_xFCuiwXal8" title="Nukatap Flow Control Mini Faucet Demo/Review" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{% youtube _xFCuiwXal8 %}
 
 All told this is a great little faucet, and while the Picnic Tap is also nice, the Nukatap is -- to me -- quite a bit nicer and I highly recommend it if you're looking for a tap you can connect directly to a ball lock on a mini keg.
 

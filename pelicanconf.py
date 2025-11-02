@@ -54,10 +54,15 @@ MENUITEMS = (
     ("Contact", "/pages/contact.html"),
 )
 
-# Plugin Configuration - Use the namespace plugin syntax for pip-installed plugins
+# Plugins
 PLUGINS = [
-    "jinja2content",
+    "liquid_tags",
     "photos",
+]
+
+# Pelican Liquid Tags configuration
+LIQUID_TAGS = [
+    "youtube",
 ]
 
 # Jinja filters

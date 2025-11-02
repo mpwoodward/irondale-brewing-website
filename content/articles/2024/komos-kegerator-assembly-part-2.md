@@ -13,7 +13,7 @@ It's been a bit since I did the [initial assembly of the kegerator]({filename}ko
 
 This post will be pretty short since in lieu of taking a ton of photos while I did things I just did a video of the end result.
 
-<iframe width="100%" height="1088" src="https://www.youtube.com/embed/8bwtowAUepg" title="Komos Four-Tap Kegerator Gas Line Installation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{% youtube 8bwtowAUepg %}
 
 Doing the gas lines wasn't nearly as time-consuming as installing the beer lines and taps -- it basically just involved putting things in place and guesstimating the gas line lengths before cutting to what seem to be more or less the right size.
 

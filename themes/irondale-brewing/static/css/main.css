@@ -606,6 +606,37 @@ article img {
     display: block; 
 }
 
+/* 1. The Container: Establishes the aspect ratio */
+.videobox {
+    /* Use 'span' as the actual element is a span */
+    display: block; 
+    
+    /* CRITICAL: Set the relative positioning anchor */
+    position: relative; 
+    
+    /* CRITICAL: This is what maintains the 16:9 aspect ratio */
+    padding-bottom: 56.25%; 
+    
+    /* Set height to zero, forcing the padding to define the visible box height */
+    height: 0; 
+    overflow: hidden;
+    max-width: 100%;
+}
+
+/* 2. The Iframe: Force the video to fill the container */
+.videobox iframe {
+    /* CRITICAL: Force absolute positioning to align with the container's edges */
+    position: absolute; 
+    top: 0;
+    left: 0;
+    
+    /* CRITICAL: Overrides the inline width="640" height="390" */
+    width: 100%;
+    height: 100%;
+    
+    border: none;
+}
+
 /* --- Responsive Adjustments (Optional but Recommended) --- */
 
 /* For smaller tablets (e.g., max-width: 768px) */

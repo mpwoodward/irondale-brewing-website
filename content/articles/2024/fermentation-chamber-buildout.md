@@ -17,7 +17,7 @@ To this end I decided it was time to create a proper fermentation chamber. My br
 
 Here's a quick video tour of the end result! Read on for more details and photos.
 
-<iframe width="100%" height="1088" src="https://www.youtube.com/embed/LtvraC6eOeY" title="Fermentation Chamber Buildout" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{% youtube LtvraC6eOeY %}
 
 ## Fermentation Chamber Options
 

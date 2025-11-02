@@ -9,4 +9,4 @@ Status: published
 
 Quick video on how to hack a Fermonster lid to enable closed transfers from your fermenter to a keg!
 
-<iframe width="100%" height="583" src="https://www.youtube.com/embed/X0E0czCFevQ" title="Fermonster Lid Modification for Closed Transfers" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{% youtube X0E0czCFevQ %}

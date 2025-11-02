@@ -140,18 +140,8 @@ About 4-5 hours later the fermentation was kicking off, with the T-58 going comp
 ![Photo of beer in a plastic fermenter with the label "S-04" on green masking tape](/images/2023/12/PXL_20231209_011139668-1280x1700.jpg)
 *S-04 is off to a slower start*
 
-<figure class="youtube-embed" style="margin: 1.5em 0;">
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
-        <iframe
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-            src="https://www.youtube.com/embed/CPszSej7yAM"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            title="Embedded YouTube video">
-        </iframe>
-    </div>
-    <figcaption style="font-size: 0.9em; font-style: italic; margin-top: 10px; text-align: center;">Only about 4 hours in -- not sure I've ever had anything take off this quickly!</figcaption>
-</figure>
+{% youtube CPszSej7yAM %}
+
+*Only about 4 hours in -- not sure I've ever had anything take off this quickly!*
 
 I can't wait to see how this all comes together in a few weeks. Cheers!
