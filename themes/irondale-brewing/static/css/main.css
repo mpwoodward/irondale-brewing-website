@@ -1,6 +1,7 @@
-body {
+html, body {
     margin: 0;
     padding: 0;
+    height: 100%;
     font-family: Open Sans, Arial, sans-serif;
     font-size: 14px;
     color: #666;
@@ -8,7 +9,6 @@ body {
     line-height: 1.7em;
     font-weight: 500;
     -webkit-font-smoothing: antialiased;
-    display: block;
 }
 
 div {
@@ -31,6 +31,10 @@ header {
     font-size: 100%;
     -webkit-text-size-adjust: 100%;
     background: transparent;
+}
+
+header, footer {
+    flex-shrink: 0;
 }
 
 h1 {
@@ -126,6 +130,17 @@ thead th {
 
 tbody tr:nth-child(even) {
   background-color: #f9f9f9; /* Adds zebra striping for readability */
+}
+
+.main-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+    background-color: #efefef !important;
 }
 
 .header-no-padding {
