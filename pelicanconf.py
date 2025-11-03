@@ -59,6 +59,7 @@ PLUGINS = [
     "liquid_tags",
     "photos",
     "more_categories",
+    "search",
 ]
 
 # Pelican Liquid Tags configuration

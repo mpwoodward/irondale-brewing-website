@@ -1,4 +1,4 @@
-Title: Kölsch Katastrophe
+Title: Kolsch Katastrophe
 Date: 2024-07-17 16:46
 Author: mpwoodward
 Category: Brew Days, Homebrewing, Process

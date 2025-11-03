@@ -1,4 +1,4 @@
-Title: 2025 Brewtubers Amber Ale Malt Experiment #6: Opal 44 Toasted Toffee Malt (Hundehütte Brewery)
+Title: 2025 Brewtubers Amber Ale Malt Experiment #6: Opal 44 Toasted Toffee Malt (Hundehutte Brewery)
 Date: 2025-10-26 23:42
 Author: mpwoodward
 Category: Experiments, Homebrewing, Tastings
