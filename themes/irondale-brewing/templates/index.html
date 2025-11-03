@@ -22,13 +22,18 @@
                 <h2 class="article-title header-no-padding">
                     <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
                 </h2>
+                <div class="article-subtitle">
+                    <time datetime="{{ article.date.isoformat() }}">{{ article.date.strftime('%b %d, %Y') }}</time>
+                    {% if article.category %}
+                    | {% for cat in article.categories %}
+                        <a href="{{ SITEURL }}/{{ cat.url }}">{{ cat.name }}</a>{% if not loop.last %}, {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                </div>
             </header>
             <section>
                 {{ article.summary }}
             </section>
-            <footer>
-                <p><time datetime="{{ article.date.isoformat() }}"> {{ article.locale_date }} </time></p>
-            </footer>
         </article>
     {% endfor %}
 

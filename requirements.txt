@@ -4,4 +4,5 @@ lxml
 requests
 pelican-photos
 pelican-liquid-tags
+pelican-more-categories
 python-slugify

@@ -51,10 +51,15 @@
             {% endblock header %}
             {% block nav %}
                 <div class="menu-section">
+                    <button id="hamburger-btn" class="hamburger-button" aria-label="Toggle menu" aria-expanded="false">
+                        <span class="hamburger-bar"></span>
+                        <span class="hamburger-bar"></span>
+                        <span class="hamburger-bar"></span>
+                    </button>
                     <div class="menu-row">
                         <div class="menu-wrap">
                             <div class="primary-menu">
-                                <nav class="primary-menu-nav">
+                                <nav id="primary-nav" class="primary-menu-nav">
                                     <ul>
                                         {% for title, link in MENUITEMS %}
                                         <li><a href="{{ link }}">{{ title }}</a></li>
@@ -131,6 +136,17 @@
                 plugins: [lgZoom, lgThumbnail] // Initialize the plugins
             });
         }
+    </script>
+
+    <script type="text/javascript">
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const nav = document.getElementById('primary-nav');
+
+        hamburgerBtn.addEventListener('click', () => {
+            nav.classList.toggle('is-active');
+            const isExpanded = hamburgerBtn.getAttribute('aria-expanded') === 'true';
+            hamburgerBtn.setAttribute('aria-expanded', !isExpanded);
+        });
     </script>
 </body>
 </html>

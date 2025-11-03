@@ -48,8 +48,8 @@ SOCIAL = (
 
 # Menu items for the theme
 MENUITEMS = (
-    ("Homebrewing", "/pages/homebrewing.html"),
-    ("Craft Beer", "/pages/craft-beer.html"),
+    ("Homebrewing", "/category/homebrewing.html"),
+    ("Craft Beer", "/category/craft-beer.html"),
     ("About", "/pages/about.html"),
     ("Contact", "/pages/contact.html"),
 )
@@ -58,6 +58,7 @@ MENUITEMS = (
 PLUGINS = [
     "liquid_tags",
     "photos",
+    "more_categories",
 ]
 
 # Pelican Liquid Tags configuration

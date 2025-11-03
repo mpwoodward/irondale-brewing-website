@@ -16,6 +16,14 @@
   <article>
     <header>
       <h2 class="header-no-padding">{{ article.title }}</h2>
+      <div class="article-subtitle">
+        <time datetime="{{ article.date.isoformat() }}">{{ article.date.strftime('%b %d, %Y') }}</time>
+        {% if article.category %}
+        | {% for cat in article.categories %}
+          <a href="{{ SITEURL }}/{{ cat.url }}">{{ cat.name }}</a>{% if not loop.last %}, {% endif %}
+          {% endfor %}
+        {% endif %}
+      </div>
     </header>
     {% import 'translations.html' as translations with context %}
     {{ translations.translations_for(article) }}
