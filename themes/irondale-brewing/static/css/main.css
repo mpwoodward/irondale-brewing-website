@@ -60,10 +60,6 @@ h4 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
     -webkit-text-size-adjust: 100%;
     vertical-align: baseline;
     background: transparent;
@@ -130,6 +126,17 @@ thead th {
 
 tbody tr:nth-child(even) {
   background-color: #f9f9f9; /* Adds zebra striping for readability */
+}
+
+.header-no-padding {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+.article-headings {
+    padding-bottom: 4px;
 }
 
 .header-inner-content {
@@ -669,12 +676,6 @@ article img {
     .header-column {
         margin-bottom: 0;
         width: 100%;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 980px) {
-    .header-section {
-        display: none !important;
     }
 }
 

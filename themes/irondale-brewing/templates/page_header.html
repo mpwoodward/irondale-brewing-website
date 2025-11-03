@@ -7,17 +7,17 @@
         <div class="page-header-wrapper">
             <div class="page-header-content">
                 {% if content_object and content_object.pagequote %}
-                    <h4>{{ content_object.pagequote }}</h4>
+                    <h4 class="header-no-padding">{{ content_object.pagequote }}</h4>
                 {% elif not content_object %}
-                    <h4>"They who drink beer will think beer." - Washington Irving</h4>
+                    <h4 class="header-no-padding">"They who drink beer will think beer." - Washington Irving</h4>
                 {% endif %}
     
                 {% if content_object and content_object.pagetitle %}
-                    <h1>{{ content_object.pagetitle }}</h1>
+                    <h1 class="header-no-padding">{{ content_object.pagetitle }}</h1>
                 {% elif content_object %}
-                    <h1>{{ content_object.title }}</h1>
+                    <h1 class="header-no-padding">{{ content_object.title }}</h1>
                 {% else %}
-                    <h1>Irondale Brewing</h1>
+                    <h1 class="header-no-padding">Irondale Brewing</h1>
                 {% endif %}
             </div>
         </div>

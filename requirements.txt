@@ -3,6 +3,5 @@ BeautifulSoup4
 lxml
 requests
 pelican-photos
-pelican-jinja2content
 pelican-liquid-tags
 python-slugify

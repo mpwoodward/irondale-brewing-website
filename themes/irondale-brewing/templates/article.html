@@ -15,7 +15,7 @@
 {% block content %}
   <article>
     <header>
-      <h2>{{ article.title }}</h2>
+      <h2 class="header-no-padding">{{ article.title }}</h2>
     </header>
     {% import 'translations.html' as translations with context %}
     {{ translations.translations_for(article) }}
@@ -25,7 +25,7 @@
     {% if article.photo_gallery %}
       {% for gallery in article.photo_gallery %}
         <div class="photo-gallery">
-            <h3>{{ gallery.0 }}</h3>
+            <h3 class="header-no-padding">{{ gallery.0 }}</h3>
             <div class="gallery-images">
                 {% for title, full_path, thumb_path, exif, caption in gallery.1 %}
                     <a href="{{ SITEURL }}/{{ full_path }}" 
