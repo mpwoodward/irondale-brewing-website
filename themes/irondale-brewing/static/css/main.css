@@ -293,8 +293,8 @@ tbody tr:nth-child(even) {
     padding: 0 !important;
     flex-wrap: wrap;
     display: flex;
-    -webkit-box-align: stretch;
-    align-items: stretch;
+    -webkit-box-align: center;
+    align-items: center;
     line-height: 1.7em;
     float: none;
     margin-left: -11px;
@@ -305,8 +305,8 @@ tbody tr:nth-child(even) {
 .primary-menu-nav>ul>li {
     position: relative;
     display: flex;
-    -webkit-box-align: stretch;
-    align-items: stretch;
+    -webkit-box-align: center;
+    align-items: center;
     padding-left: 11px;
     padding-right: 11px;
     line-height: 1em;
@@ -330,6 +330,10 @@ tbody tr:nth-child(even) {
     outline: 0;
     -webkit-text-size-adjust: 100%;
     background: transparent;
+}
+
+.primary-menu-nav>ul>li>a:hover {
+    color: #e94558;
 }
 
 .page-header-section {
@@ -667,6 +671,55 @@ article img {
     border: none;
 }
 
+/* --- NEW SEARCH ICON STYLES (Desktop Focus) --- */
+
+/* Style the container <li> for vertical centering */
+.search-desktop-item {
+    /* Inherits padding from primary-menu-nav>ul>li */
+    position: relative; 
+    display: flex !important; /* Forces the list item to use Flexbox */
+    align-items: center;    /* Vertically centers icon with text links */
+    justify-content: center;
+}
+
+/* Style the link/button wrapper */
+.search-icon-link {
+    /* Inherits link color from anchor styles, but we want white here */
+    color: #fff !important; 
+    font-size: 18px; /* Match the font size of primary links */
+    /* Ensure no extra padding is added by the link block style */
+    padding: 0; 
+    margin: 0;
+    line-height: 1; /* Match link line height */
+    
+    /* Ensure alignment is maintained */
+    display: flex;
+    align-items: center;
+}
+
+/* Style the icon itself */
+.search-icon-link .material-symbols-outlined {
+    /* CRITICAL: Set size to match the surrounding 18px link text */
+    font-size: 16px;
+
+    /* Fine-tune vertical position if needed (may not be necessary with 16px) */
+    position: relative;
+    top: 0px;
+    
+    /* Ensure the icon renders correctly */
+    font-variation-settings: 
+        'FILL' 0, 
+        'wght' 700,
+        'GRAD' 0,
+        'opsz' 24; 
+    
+    margin: 0; 
+}
+
+.search-icon-link:hover {
+    color: #e94558 !important; /* Match your accent color */
+}
+
 /* --- Responsive Adjustments (Optional but Recommended) --- */
 
 /* For smaller tablets (e.g., max-width: 768px) */
@@ -769,6 +822,10 @@ article img {
         background-color: #fff;
         margin: 5px 0;
         transition: 0.4s;
+    }
+
+    .search-desktop-item {
+        display: none !important;
     }
 }
 
