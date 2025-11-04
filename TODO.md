@@ -2,6 +2,7 @@
 
 - Search functionality
 - Add Google Analytics
+- Header spacing in single articles at narrow widths
 
 # Future Stuff
 
