@@ -5,6 +5,7 @@ Slug: about
 PageTitle: Forged with Flavor
 PageQuote: "Give a man a beer, waste an hour. Teach a man to brew, and waste a lifetime!" – Bill Owen
 PageHeaderImage: /theme/images/brewery-16.jpg
+PageHeaderImageOpacity: 0.6
 Status: published
 
 # Homebrewing With The Industrious Spirit of Irondale

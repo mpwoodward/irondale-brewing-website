@@ -6,5 +6,6 @@ PageTitle: Contact
 PageQuote: "Good people drink good beer." - Hunter S. Thompson
 PageHeaderImage: /theme/images/brewery-16.jpg
 Template: contact
+PageHeaderImageOpacity: 0.6
 Status: published
 

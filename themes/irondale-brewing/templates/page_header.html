@@ -1,8 +1,11 @@
 {% macro render_header(content_object=None) %}
+    {% set opacity = content_object.pageheaderimageopacity if content_object and content_object.pageheaderimageopacity else '0.3' %}
+    {% set background_color = 'rgba(0, 0, 0, ' ~ opacity ~ ')' %}
+
     {% if content_object and content_object.pageheaderimage %}
-    <div class="page-header-section" style="background-image: url('{{ SITEURL }}{{ content_object.pageheaderimage }}');">
+    <div class="page-header-section" style="background-image: linear-gradient({{ background_color }}, {{ background_color }}), url('{{ SITEURL }}{{ content_object.pageheaderimage }}');">
     {% else %}
-    <div class="page-header-section" style="background-image: url('{{ SITEURL }}/theme/images/hero_inner_beer_01-1.jpg');">
+    <div class="page-header-section" style="background-image: linear-gradient({{ background_color }}, {{ background_color }}), url('{{ SITEURL }}/theme/images/hero_inner_beer_01-1.jpg');">
     {% endif %}
         <div class="page-header-wrapper">
             <div class="page-header-content">
