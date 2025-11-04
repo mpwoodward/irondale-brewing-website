@@ -720,6 +720,35 @@ article img {
     color: #e94558 !important; /* Match your accent color */
 }
 
+/* --- NEW STYLES for Mobile Search Button (Visible on Mobile Only) --- */
+
+.search-toggle-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0; 
+    z-index: 1001; 
+    outline: none;
+    
+    /* Default: Hide this button globally/on desktop */
+    display: none; 
+}
+
+.search-toggle-button .material-symbols-outlined {
+    font-size: 24px; /* Larger icon for touch target */
+    color: #fff; 
+    font-variation-settings: 
+        'FILL' 0,
+        'wght' 700, 
+        'GRAD' 0,
+        'opsz' 24;
+    transition: color 0.2s;
+}
+
+.search-toggle-button:hover .material-symbols-outlined {
+    color: #e94558 !important;
+}
+
 /* --- Responsive Adjustments (Optional but Recommended) --- */
 
 /* For smaller tablets (e.g., max-width: 768px) */
@@ -763,8 +792,9 @@ article img {
     .menu-section {
         /* Ensure the menu bar can contain the absolutely positioned mobile menu */
         position: relative;
-        /* Maintain a consistent height for the menu bar */
-        min-height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     /* Hide the desktop menu links */
@@ -803,20 +833,18 @@ article img {
 
     /* Style and display the hamburger button */
     .hamburger-button {
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: none;
-        border: none;
-        cursor: pointer;
+        display: block !important;
+        position: static;
+        transform: none;
+        order: 1;
+        margin: 0 5px 0 0;
         padding: 10px;
-        z-index: 1001;
+        background: transparent;
+        border: none;
     }
 
     .hamburger-bar {
-        display: block;
+        display: block !important;
         width: 25px;
         height: 3px;
         background-color: #fff;
@@ -824,8 +852,102 @@ article img {
         transition: 0.4s;
     }
 
+    .search-toggle-button {
+        display: block;
+        order: 2;
+        margin: 0 0 0 5px;
+        padding: 10px;
+        background: transparent;
+        border: none;
+    }
+
+    .menu-row {
+        display: block; 
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        z-index: 999; 
+    }
+
+    /* When the menu is active, ensure the menu appears over everything else (unchanged) */
+    .primary-menu-nav {
+        /* display: none is now handled by setting display:none on the parent .menu-row, 
+           but we need to re-enable it on activation */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #171717;
+        z-index: 1000;
+        
+        /* New: We rely on the JS to show it when active */
+        display: none;
+    }
+
+    /* When the menu is active, display it (Re-enabling the visibility) */
+    .primary-menu-nav.is-active {
+        display: block;
+    }
+
+    /* Hide the desktop search icon that sits inside the list */
     .search-desktop-item {
         display: none !important;
+    }
+
+    /* Stack the menu items vertically (unchanged) */
+    .primary-menu-nav ul {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+
+    .primary-menu-nav ul li {
+        width: 100%;
+        padding: 0;
+        border-top: 1px solid #333;
+    }
+
+    .primary-menu-nav ul li a {
+        padding: 15px;
+        display: block; 
+    }
+
+    #primary-nav {
+        display: none; /* Default hidden state for JS to override */
+        background-color: #171717;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* 5. JS TOGGLE: When the class is added by JS, show the menu */
+    #primary-nav.is-active {
+        display: block; 
+    }
+
+    /* Hide the desktop search icon that sits inside the list */
+    .search-desktop-item {
+        display: none !important;
+    }
+
+    /* Stack the menu items vertically (unchanged) */
+    .primary-menu-nav ul {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+
+    .primary-menu-nav ul li {
+        width: 100%;
+        padding: 0;
+        border-top: 1px solid #333;
+    }
+
+    .primary-menu-nav ul li a {
+        padding: 15px;
+        display: block; 
     }
 }
 
