@@ -393,6 +393,7 @@ tbody tr:nth-child(even) {
     max-width: 1080px;
     margin: auto;
     position: relative;
+    display: block;
 }
 
 .article-summary-container {
@@ -442,6 +443,7 @@ article img {
 .contact-section-one {
     padding: 40px 0;
     position: relative;
+    z-index: 1;
 }
 
 .contact-section-one::before {
@@ -456,13 +458,13 @@ article img {
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0.3;
-    z-index: -1;
 }
 
 .contact-section-two {
     padding: 40px 0;
     position: relative;
     color: #fff;
+    z-index: 1;
 }
 
 .contact-section-two::before {
@@ -476,7 +478,6 @@ article img {
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
-    z-index: -1;
 }
 
 .contact-section-two a {
