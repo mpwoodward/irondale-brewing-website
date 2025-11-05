@@ -1,7 +1,3 @@
-# Do Now
-
-- Header spacing in single articles at narrow widths
-
 # Future Stuff
 
 - Add comments capability (Disqus or whatever)

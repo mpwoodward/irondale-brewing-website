@@ -376,7 +376,7 @@ tbody tr:nth-child(even) {
 }
 
 .main-content-container {
-    padding-top: 20px !important;
+    padding-top: 10px !important;
     padding-bottom: 0px !important;
     background-color: #efefef !important;
     position: relative;
