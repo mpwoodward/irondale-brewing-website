@@ -29,6 +29,15 @@
         <link rel="icon" href="{{ SITEURL }}/theme/images/cropped-Irondale-Brewing-Logo-square-192x192.png" sizes="192x192" />
         <link rel="apple-touch-icon" href="{{ SITEURL }}/theme/images/cropped-Irondale-Brewing-Logo-square-180x180.png" />
         <meta name="msapplication-TileImage" content="{{ SITEURL }}/theme/images/cropped-Irondale-Brewing-Logo-square-270x270.png" />
+
+        <!-- google analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-BKGQBNETTH"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-BKGQBNETTH');
+        </script>
     {% endblock head %}
 </head>
 
@@ -139,6 +148,8 @@
                 <button id="search-close-btn" class="material-symbols-outlined" aria-label="Close search">close</button>
                 <form class="stork-form">
                     <input 
+                        id="sitesearch-input"
+                        name="sitesearch-input"
                         data-stork="sitesearch" 
                         placeholder="Search site content..."
                         aria-label="Search site content"
