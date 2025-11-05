@@ -1,3 +1,7 @@
+# Now
+
+- Make "Irondale, Washington" link in footer red instead of blue
+
 # Future Stuff
 
 - Add comments capability (Disqus or whatever)
