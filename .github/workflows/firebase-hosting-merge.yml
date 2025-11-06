@@ -22,6 +22,20 @@ jobs:
           # Upgrade pip and install packages in requirements.txt
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+    
+      - name: Install Stork Binary for Search
+        run: |
+          # Download and install the latest Stork binary for Linux
+          STORK_VERSION="1.6.0"
+          DOWNLOAD_FILE="stork-ubuntu-20-04"
+          STORK_URL="https://files.stork-search.net/releases/v${STORK_VERSION}/${DOWNLOAD_FILE}"
+
+          curl -LO ${STORK_URL}
+          chmod +x ${DOWNLOAD_FILE}
+          sudo mv ${DOWNLOAD_FILE} /usr/local/bin/stork
+
+          # Verify installation
+          stork --version
 
       - name: Generate Pelican Site (Build)
         run: pelican content -s publishconf.py
