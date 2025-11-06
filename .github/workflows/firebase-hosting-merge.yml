@@ -25,8 +25,9 @@ jobs:
 
       - name: Install libssl1.1 Dependency
         run: |
-          DEB_URL="http://security.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.20_amd64.deb"
-          DEB_FILE="libssl1.1.deb"
+          DEB_FILE="libssl1.1_1.1.1f-1ubuntu2.24_amd64.deb"
+          DEB_URL="http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/${DEB_FILE}"
+
           curl -LO ${DEB_URL}
           sudo dpkg -i ${DEB_FILE}
           sudo apt-get install -f -y
