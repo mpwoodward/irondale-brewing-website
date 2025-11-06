@@ -2,7 +2,8 @@ pelican[markdown]
 BeautifulSoup4
 lxml
 requests
-pelican-photos
 pelican-liquid-tags
 pelican-more-categories
+pelican-photos
+pelican-search
 python-slugify
