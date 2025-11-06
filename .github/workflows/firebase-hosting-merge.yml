@@ -22,6 +22,13 @@ jobs:
           # Upgrade pip and install packages in requirements.txt
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+
+      - name: Install libssl1.1 Dependency
+        run: |
+          # Update package lists
+          sudo apt-get update
+          # Install the specific older OpenSSL library required by Stork 1.6.0
+          sudo apt-get install -y libssl1.1-dev
     
       - name: Install Stork Binary for Search
         run: |
