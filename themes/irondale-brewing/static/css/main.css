@@ -980,10 +980,22 @@ div[data-stork="sitesearch-output"]:empty {
 }
 
 @media (max-width: 960px) {
+    .header-section {
+        height: 150px !important;
+    }
+
+    .header-column-image img {
+        max-width: 40vw;
+        max-height: 140px;
+        width: auto;
+        height: auto;
+    }
+
     .header-row, .nav-column {
         padding: 30px 0;
         max-width: 1080px;
     }
+
     .header-column {
         margin-bottom: 0;
         width: 100%;
