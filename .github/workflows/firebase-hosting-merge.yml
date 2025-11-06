@@ -28,7 +28,7 @@ jobs:
           # Update package lists
           sudo apt-get update
           # Install the specific older OpenSSL library required by Stork 1.6.0
-          sudo apt-get install -y libssl1.1-dev
+          sudo apt-get install -y libssl1.1
     
       - name: Install Stork Binary for Search
         run: |
