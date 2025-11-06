@@ -1,5 +1,5 @@
 {% macro render_header(content_object=None) %}
-    {% set opacity = content_object.pageheaderimageopacity if content_object and content_object.pageheaderimageopacity else '0.3' %}
+    {% set opacity = content_object.pageheaderimageopacity if content_object and content_object.pageheaderimageopacity else '0.6' %}
     {% set background_color = 'rgba(0, 0, 0, ' ~ opacity ~ ')' %}
 
     {% if content_object and content_object.pageheaderimage %}
