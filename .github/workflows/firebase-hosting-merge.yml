@@ -25,10 +25,12 @@ jobs:
 
       - name: Install libssl1.1 Dependency
         run: |
-          # Update package lists
-          sudo apt-get update
-          # Install the specific older OpenSSL library required by Stork 1.6.0
-          sudo apt-get install -y libssl1.1
+          DEB_URL="http://security.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.20_amd64.deb"
+          DEB_FILE="libssl1.1.deb"
+          curl -LO ${DEB_URL}
+          sudo dpkg -i ${DEB_FILE}
+          sudo apt-get install -f -y
+          rm -f ${DEB_FILE}
     
       - name: Install Stork Binary for Search
         run: |
