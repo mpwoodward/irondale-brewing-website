@@ -1160,16 +1160,20 @@ div[data-stork="sitesearch-output"]:empty {
 
     /* stack footer content */
     .footer-row {
-        flex-direction: column !important;
-        justify-content: center !important;
-        align-items: center !important;
+        display: block !important;
+        flex-direction: unset !important;
+        justify-content: unset !important;
+        align-items: unset !important;
+        padding: 10px 0;
     }
 
     .footer-column-left, .footer-column-right {
+        float: left !important;
         width: 100% !important;
         display: block !important;
-        text-align: center;
-        margin-bottom: 20px;
+        text-align: center !important;
+        margin-bottom: 20px !important;
+        clear: both !important;
     }
 
     .footer-column-right {
@@ -1177,11 +1181,17 @@ div[data-stork="sitesearch-output"]:empty {
     }
 
     .footer-column-right-inner {
-        text-align: center;
+        text-align: center !important;
     }
 
     .social-icon {
-        margin: 0 5px;
+        margin: 0 5px !important;
+    }
+
+    .footer-row::after {
+        content: "";
+        display: table;
+        clear: both;    
     }
 }
 
