@@ -1,3 +1,7 @@
+# Now
+
+- Categories list page
+
 # Future Stuff
 
 - Add comments capability (Disqus or whatever)
