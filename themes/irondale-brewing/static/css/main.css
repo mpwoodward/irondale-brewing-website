@@ -575,9 +575,16 @@ article img {
 
 .footer-column-left {
     text-align: left;
+    width: 50%;
 }
 
 .footer-column-right {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.footer-column-right-inner {
     text-align: left;
 }
 

@@ -1,6 +1,6 @@
 # Now
 
-- Make "Irondale, Washington" link in footer red instead of blue
+- Footer layout on mobile looks crappy
 
 # Future Stuff
 
