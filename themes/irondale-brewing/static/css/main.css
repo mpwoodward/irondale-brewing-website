@@ -752,9 +752,72 @@ article img {
 }
 
 /* --- PAGEFIND STYLES --- */
-.pagefind-modal {
+/*.pagefind-modal {
     background: rgba(0, 0, 0, 0.95) !important;
     padding-top: 50px !important;
+}*/
+
+#pagefind-search-container {
+    /* Full screen overlay */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95); /* Matches your desired dark overlay */
+    z-index: 9999;
+    
+    /* CRITICAL: Control visibility with this class */
+    display: none !important;
+    
+    /* Center the Pagefind UI element inside */
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    
+    /* Ensure the search box itself is correctly positioned */
+    box-sizing: border-box;
+}
+
+/* Pagefind UI will be injected inside the container, but we need to limit its width */
+#pagefind-search-container .pagefind-ui {
+    width: 90%;
+    max-width: 600px;
+}
+
+/* Overriding Pagefind's own search input visibility which might be set to hidden */
+#pagefind-search-container .pagefind-search-input {
+    /* Ensure the input is visible when the container is shown */
+    display: block !important; 
+}
+
+/* Show the container when the .is-open class is added by JS */
+#pagefind-search-container.is-open {
+    display: flex !important; /* Use flex to center the content */
+}
+
+.pagefind-modal {
+    /* Hard hide: This beats display: block, visibility: visible, opacity: 1, etc. */
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important; 
+    /* The modal must also be above everything, but your existing styles should handle this. */
+}
+
+/* Force show everything when our class is present */
+.pagefind-modal.is-open {
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    z-index: 99999 !important; /* Ensure it's on top */
+    /* Add any other visibility properties you see in DevTools if this fails */
+}
+
+/* 3. Ensure the search input is also visible when the modal is open */
+/* This might be necessary if Pagefind applies hiding rules to children */
+.pagefind-modal.is-open .pagefind-ui {
+    opacity: 1 !important;
+    /* You may need to inspect the Pagefind-generated HTML to see if other elements need override */
 }
 
 .pagefind-ui {

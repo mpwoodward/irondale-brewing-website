@@ -42,7 +42,8 @@
 
 <body class="main-wrapper">
     {% block body %}
-        <div id="search-ui"></div>
+        <div id="pagefind-search-container"></div> 
+        <button id="search-trigger-fallback">OPEN SEARCH</button>
 
         <header>
             {% block header %}
@@ -85,7 +86,7 @@
                                         {% endfor %}
 
                                         <li class="search-desktop-item">
-                                            <a href="#" class="search-icon-link">
+                                            <a href="javascript:void(0)" class="search-icon-link">
                                                 <span class="material-symbols-outlined">search</span>
                                             </a>
                                         </li>
@@ -176,13 +177,52 @@
 
     <!-- search -->
     <script src="{{ SITEURL }}/pagefind/pagefind-ui.js" type="text/javascript"></script>
-    <script>
-        // Initialize Pagefind search interface
+<script>
+        // 1. Initialize Pagefind UI into the DEDICATED DIV immediately after script load.
+        // This is synchronous and bypasses the modal/focus failure.
+        new PagefindUI({
+            element: "#pagefind-search-container", 
+            showImages: false,
+            // Use the explicit base URL for asset loading security
+            baseUrl: "{{ SITEURL }}/pagefind/" 
+        });
+
+        // 2. Define the toggle function.
+        const toggleSearchModal = (e) => {
+            e.preventDefault(); 
+            
+            // We now toggle the visibility of our custom container.
+            const searchContainer = document.getElementById('pagefind-search-container');
+            
+            if (searchContainer) {
+                searchContainer.classList.toggle('is-open');
+
+                if (searchContainer.classList.contains('is-open')) {
+                    // Attempt to focus the input inside the container for UX
+                    searchContainer.querySelector('.pagefind-search-input')?.focus();
+                    
+                    // Close mobile menu
+                    document.getElementById('primary-nav')?.classList.remove('is-active');
+                    document.getElementById('hamburger-btn')?.setAttribute('aria-expanded', 'false');
+                }
+            }
+        };
+        
+        // 3. Attach open listeners when DOM is ready.
         window.addEventListener('DOMContentLoaded', () => {
-            new PagefindUI({
-                element: "#search-ui",
-                showImages: false,
+            document.querySelector('.search-icon-link')?.addEventListener('click', toggleSearchModal); 
+            document.getElementById('search-mobile-btn')?.addEventListener('click', toggleSearchModal);
+            document.getElementById('search-trigger-fallback')?.addEventListener('click', toggleSearchModal);
+
+            // 4. Set up close listeners
+            document.addEventListener('keydown', (e) => {
+                if (e.key === "Escape" && document.getElementById('pagefind-search-container')?.classList.contains('is-open')) {
+                    toggleSearchModal(e);
+                }
             });
+            
+            // Note: Pagefind does not provide a close button in the EMBEDDED UI. 
+            // The Escape key is your primary close mechanism here.
         });
     </script>
 </body>
