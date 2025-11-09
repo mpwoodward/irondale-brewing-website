@@ -42,8 +42,11 @@
 
 <body class="main-wrapper">
     {% block body %}
-        <div id="pagefind-search-container"></div> 
-        <button id="search-trigger-fallback">OPEN SEARCH</button>
+        <div id="pagefind-search-container">
+            <button class="pagefind-close-button" onclick="toggleSearchModal()" aria-label="Close search">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+        </div> 
 
         <header>
             {% block header %}
@@ -177,52 +180,55 @@
 
     <!-- search -->
     <script src="{{ SITEURL }}/pagefind/pagefind-ui.js" type="text/javascript"></script>
-<script>
-        // 1. Initialize Pagefind UI into the DEDICATED DIV immediately after script load.
-        // This is synchronous and bypasses the modal/focus failure.
+    <script>
+        // 1. Initialize Pagefind UI (Runs immediately after script loads)
         new PagefindUI({
             element: "#pagefind-search-container", 
             showImages: false,
-            // Use the explicit base URL for asset loading security
-            baseUrl: "{{ SITEURL }}/pagefind/" 
+            autofocus: false,
+            // baseUrl is omitted as per your working configuration
         });
 
-        // 2. Define the toggle function.
+        // 2. Define the toggle function in the global scope (Accessible by inline onclick)
         const toggleSearchModal = (e) => {
-            e.preventDefault(); 
+            // Check if an event object exists; if so, prevent default action for links/forms.
+            // This is necessary for the opening links (<a> tags) to prevent navigation.
+            e?.preventDefault();
             
-            // We now toggle the visibility of our custom container.
             const searchContainer = document.getElementById('pagefind-search-container');
             
             if (searchContainer) {
+                // CORE LOGIC: Toggle the 'is-open' class
                 searchContainer.classList.toggle('is-open');
 
                 if (searchContainer.classList.contains('is-open')) {
-                    // Attempt to focus the input inside the container for UX
-                    searchContainer.querySelector('.pagefind-search-input')?.focus();
-                    
-                    // Close mobile menu
+                    // Actions when OPENING: Focus input and close mobile menu
+                    searchContainer.querySelector('.pagefind-ui__search-input')?.focus();
                     document.getElementById('primary-nav')?.classList.remove('is-active');
                     document.getElementById('hamburger-btn')?.setAttribute('aria-expanded', 'false');
                 }
             }
         };
         
-        // 3. Attach open listeners when DOM is ready.
+        // 3. Attach listeners when DOM is ready (Only for opening buttons/links and ESC key)
         window.addEventListener('DOMContentLoaded', () => {
-            document.querySelector('.search-icon-link')?.addEventListener('click', toggleSearchModal); 
-            document.getElementById('search-mobile-btn')?.addEventListener('click', toggleSearchModal);
-            document.getElementById('search-trigger-fallback')?.addEventListener('click', toggleSearchModal);
+            // Select all elements that should OPEN the modal and attach the handler
+            const openSelectors = [
+                '.search-icon-link',          // Desktop magnifying glass link
+                '#search-mobile-btn',         // Mobile magnifying glass button
+            ];
 
-            // 4. Set up close listeners
+            openSelectors.forEach(selector => {
+                document.querySelector(selector)?.addEventListener('click', toggleSearchModal);
+            });
+
+            // ESC Key Listener (Already verified and works correctly)
             document.addEventListener('keydown', (e) => {
                 if (e.key === "Escape" && document.getElementById('pagefind-search-container')?.classList.contains('is-open')) {
+                    e.preventDefault(); 
                     toggleSearchModal(e);
                 }
             });
-            
-            // Note: Pagefind does not provide a close button in the EMBEDDED UI. 
-            // The Escape key is your primary close mechanism here.
         });
     </script>
 </body>

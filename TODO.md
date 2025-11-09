@@ -1,5 +1,6 @@
 # Now
 
+- Search sort order by date desc
 - Categories list page
 
 # Future Stuff

@@ -752,11 +752,6 @@ article img {
 }
 
 /* --- PAGEFIND STYLES --- */
-/*.pagefind-modal {
-    background: rgba(0, 0, 0, 0.95) !important;
-    padding-top: 50px !important;
-}*/
-
 #pagefind-search-container {
     /* Full screen overlay */
     position: fixed;
@@ -764,14 +759,17 @@ article img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.95); /* Matches your desired dark overlay */
+    background: rgba(0, 0, 0, 0.95);
     z-index: 9999;
     
-    /* CRITICAL: Control visibility with this class */
     display: none !important;
+
+    --pagefind-ui-text: #fff;
+    --pagefind-ui-primary: #e94558;
+    --pagefind-ui-background: transparent;
+    --pagefind-ui-border: #333;
     
     /* Center the Pagefind UI element inside */
-    display: flex;
     justify-content: center;
     padding-top: 50px;
     
@@ -779,45 +777,9 @@ article img {
     box-sizing: border-box;
 }
 
-/* Pagefind UI will be injected inside the container, but we need to limit its width */
-#pagefind-search-container .pagefind-ui {
-    width: 90%;
-    max-width: 600px;
-}
-
-/* Overriding Pagefind's own search input visibility which might be set to hidden */
-#pagefind-search-container .pagefind-search-input {
-    /* Ensure the input is visible when the container is shown */
-    display: block !important; 
-}
-
 /* Show the container when the .is-open class is added by JS */
 #pagefind-search-container.is-open {
     display: flex !important; /* Use flex to center the content */
-}
-
-.pagefind-modal {
-    /* Hard hide: This beats display: block, visibility: visible, opacity: 1, etc. */
-    visibility: hidden !important;
-    opacity: 0 !important;
-    pointer-events: none !important; 
-    /* The modal must also be above everything, but your existing styles should handle this. */
-}
-
-/* Force show everything when our class is present */
-.pagefind-modal.is-open {
-    visibility: visible !important;
-    opacity: 1 !important;
-    pointer-events: auto !important;
-    z-index: 99999 !important; /* Ensure it's on top */
-    /* Add any other visibility properties you see in DevTools if this fails */
-}
-
-/* 3. Ensure the search input is also visible when the modal is open */
-/* This might be necessary if Pagefind applies hiding rules to children */
-.pagefind-modal.is-open .pagefind-ui {
-    opacity: 1 !important;
-    /* You may need to inspect the Pagefind-generated HTML to see if other elements need override */
 }
 
 .pagefind-ui {
@@ -825,27 +787,14 @@ article img {
     max-width: 600px;
     position: relative;
     padding: 0 10px;
+    background-color: transparent;
 }
 
-.pagefind-modal-close {
-    position: absolute;
-    top: -20px; 
-    right: 0px;
-    color: #fff;
-    font-size: 30px;
-    cursor: pointer;
-    background: none;
-    border: none;
-    font-family: 'Material Symbols Outlined'; 
-    padding: 0;
-    line-height: 1;
-}
-
-.pagefind-search-input {
+.pagefind-ui__search-input {
     font-size: 24px;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
-
+    
     /* FIX: Ensure 100% width by using padding-left/right of 0 */
     width: 100%; 
     padding: 15px 0; /* Vertical padding, NO horizontal padding */
@@ -853,7 +802,7 @@ article img {
     border: none;
     border-bottom: 2px solid #e94558;
     background-color: transparent; /* Set background to transparent to allow contrast */
-    color: #333;
+    color: #fff;
     
     /* ADD: Remove the default gray background from Stork's basic.css */
     background-image: none;
@@ -861,9 +810,10 @@ article img {
     outline: none;
     box-shadow: none;
     box-sizing: border-box; /* Crucial for width calculations */
+    display: block !important;
 }
 
-.pagefind-results {
+.pagefind-ui__results {
     margin-top: 25px; 
     padding: 0;
     
@@ -880,95 +830,69 @@ article img {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
-.pagefind-results:empty {
-    /* If you want to hide it completely when empty: */
-    /* display: none; */ 
-    
-    /* Alternatively, if you want to keep the box but remove clutter: */
-    border: none;
-    box-shadow: none;
-    margin-top: 0;
+.pagefind-ui__result {
+    padding-top: 10px !important;
+    padding-bottom: 14px !important;   
 }
 
-.pagefind-result {
-    padding: 20px 20px; /* INCREASED: Generous padding for readability */
-    border-bottom: 1px solid #333; /* Darker border for separation */
-    transition: background-color 0.2s;
-    cursor: pointer;
-    
-    /* FIX: Increase font size for readability */
-    font-family: 'Roboto', sans-serif; 
-    font-size: 1.1em; /* Increased from 0.9em */
-    line-height: 1.6; /* Increased line height */
-    color: #fff; /* Ensure text is white */
-}
-
-.pagefind-result a {
-    /* Ensure the entire result box is clickable and remove default link colors/underlines */
-    display: block;
-    text-decoration: none;
-    color: inherit;
-}
-
-.pagefind-results > .pagefind-result:last-child {
-    border-bottom: none; /* Remove border from the last item */
-}
-
-.pagefind-result:hover {
-    background-color: #333; /* Dark gray hover effect */
-}
-
-.pagefind-result-title {
+.pagefind-ui__result-title {
     font-family: 'Oswald', sans-serif;
     font-size: 1.3em; /* Slightly larger heading */
     font-weight: 700;
-    color: #fff; /* White title text */
     margin: 0;
     padding-bottom: 8px;
 }
 
-.pagefind-excerpt {
-    font-size: 1em; /* Increased font size */
-    line-height: 1.5;
-    color: #fff; /* White text for contrast */
-    margin: 0 0 10px 0; /* More spacing between paragraphs */
+.pagefind-ui__result-link {
+    color: #e94558 !important;
+    text-decoration: none;
+    display: block;
 }
 
-.pagefind-highlight {
-    /*background-color: #ffde5c !important;
-    color: #333 !important;
-    padding: 2px 4px;
-    border-radius: 2px;
-    font-weight: 700;*/
-    background-color: #e94558 !important;
+.pagefind-ui__result-excerpt {
+    margin-top: 10px;
+}
+
+.pagefind-ui__result-excerpt p {
+    font-size: 1em;
+    line-height: 1.5;
     color: #fff !important;
+    margin: 0 0 10px 0;
+}
+
+.pagefind-ui__result-excerpt mark {
+    background-color: #e94558 !important;
+    color: #fff;
     padding: 3px 5px;
     border-radius: 2px;
     font-weight: 700;
 }
 
-.pagefind-result-excerpt {
-    margin-top: 10px; 
+.pagefind-close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10000;
+    padding: 10px;
+    transition: color 0.2s;
 }
 
-.pagefind-excerpt p {
-    font-size: 1em; /* Increased font size */
-    line-height: 1.5;
-    color: #fff; /* White text for contrast */
-    margin: 0 0 10px 0; /* More spacing between paragraphs */
+.pagefind-close-button .material-symbols-outlined {
+    font-size: 30px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 700,
+        'GRAD' 0,
+        'opsz' 24;
 }
 
-.pagefind-attribution {
-    padding: 10px 20px;
-    text-align: right;
-    border-top: 1px solid #333;
-    background-color: #171717; /* Ensure footer background matches box */
-}
-
-.pagefind-attribution a {
-    color: #e94558 !important; /* Light blue link color for visibility */
-    text-decoration: none;
-    font-size: 0.85em;
+.pagefind-close-button:hover {
+    color: #e94558;
 }
 
 /* --- Responsive Adjustments (Optional but Recommended) --- */
