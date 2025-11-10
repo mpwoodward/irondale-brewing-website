@@ -895,24 +895,8 @@ article img {
     color: #e94558;
 }
 
-/* Place any injected meta pills (date, tags) under the title with a small gap */
-.pagefind-ui__result-meta-pills {
-    display: block;
-    margin-top: 6px;
-}
-
-/* Inline pill shown to the right of the title (smaller and non-link) */
-.irondale-date-pill-inline {
-    display: inline-block;
-    margin-left: 10px;
-    padding: 3px 8px;
-    background-color: rgba(255,255,255,0.06) !important;
-    color: #fff !important;
-    border-radius: 6px;
-    font-weight: 700;
-    font-size: 0.85em;
-    vertical-align: middle;
-}
+/* Date pill removed from UI: date remains in page metadata for indexing/sorting
+   but is not displayed in search results. */
 
 /* --- Responsive Adjustments (Optional but Recommended) --- */
 
