@@ -34,7 +34,8 @@ jobs:
       - name: Index Site with Pagefind
         run: |
           # Index the generated site output with Pagefind via npx (no global install)
-          npx --yes @pagefind/cli --source output --output output/pagefind
+          # Use the public `pagefind` package name (scoped @pagefind/cli is not in npm)
+          npx --yes pagefind@latest --source output --output output/pagefind
 
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
