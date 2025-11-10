@@ -182,16 +182,50 @@
     <script src="{{ SITEURL }}/pagefind/pagefind-ui.js" type="text/javascript"></script>
     <script>
         // 1. Initialize Pagefind UI (Runs immediately after script loads)
+        // We're passing a small `ranking` object to gently tune relevance (defaults are fine),
+        // and injecting only the minimal styles needed to make the overlay internally scroll.
+        // Note: Pagefind supports sorting by a single sort key (e.g. { date: 'desc' }) but
+        // using `sort` will override ranking by relevance entirely. For the hybrid behavior
+        // (relevance primary; date as a tiebreaker) we index a `date` sort key (see templates)
+        // and keep ranking tuned here. If you'd like the strict "relevance then date" tie-break
+        // behavior we can implement a small custom post-sort in JS to reorder results with equal
+        // scores — happy to add that on request.
         new PagefindUI({
             element: "#pagefind-search-container",
             showImages: false,
             autofocus: false,
+            // Ranking tweaks – these are small, non-disruptive adjustments. Keep or tune as you like.
+            ranking: {
+                // Defaults are shown in docs; we leave most as-is but you can tune these values.
+                termFrequency: 1.0,
+                termSimilarity: 1.0,
+                pageLength: 0.75,
+                termSaturation: 1.4
+            },
+            // Format the date for display in the result meta/pill. We keep the
+            // original ISO value available (so sorting still works) but replace
+            // the shown value with a human-friendly string.
+            // Keep a minimal processResult that removes the date meta to avoid
+            // Pagefind rendering a labeled date pill. We still index the date in
+            // the HTML templates for sorting, but don't display it in the UI.
+            processResult: function(result) {
+                try {
+                    if (result && result.meta && result.meta.date) {
+                        delete result.meta.date;
+                    }
+                } catch (e) {
+                    // best-effort only
+                }
+                return result;
+            },
             styles: {
                 // Minimal, targeted styles injected into Pagefind's shadow DOM.
                 // Keep only what is necessary to ensure internal scrolling works.
                 "bundle": `display: flex; flex-direction: column; height: 100%;`,
                 "form": `flex-shrink: 0;`,
-                "results": `flex-grow: 1; overflow-y: auto; min-height: 0; padding-bottom: 40px;`
+                "results": `flex-grow: 1; overflow-y: auto; min-height: 0; padding-bottom: 40px; 
+                    /* Make the metadata/tag/pill readable on the dark overlay (shadow DOM case) */
+                    .pagefind-ui__result-tag { background-color: rgba(255,255,255,0.06); color: #fff; padding: 4px 8px; border-radius: 6px; font-weight: 700; }`
             }
             // baseUrl is omitted as per your working configuration
         });

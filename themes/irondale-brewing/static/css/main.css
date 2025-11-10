@@ -857,6 +857,17 @@ article img {
     font-weight: 700;
 }
 
+/* Style the Pagefind result tags (date pill) so they are readable on the
+   dark overlay. This covers the light-DOM rendering case. If Pagefind renders
+   into a shadowRoot the same rules are injected at runtime from the template. */
+.pagefind-ui__result-tag {
+    background-color: rgba(255,255,255,0.06) !important;
+    color: #fff !important;
+    padding: 4px 8px !important;
+    border-radius: 6px !important;
+    font-weight: 700 !important;
+}
+
 .pagefind-close-button {
     position: absolute;
     top: 20px;
@@ -882,6 +893,25 @@ article img {
 
 .pagefind-close-button:hover {
     color: #e94558;
+}
+
+/* Place any injected meta pills (date, tags) under the title with a small gap */
+.pagefind-ui__result-meta-pills {
+    display: block;
+    margin-top: 6px;
+}
+
+/* Inline pill shown to the right of the title (smaller and non-link) */
+.irondale-date-pill-inline {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 3px 8px;
+    background-color: rgba(255,255,255,0.06) !important;
+    color: #fff !important;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.85em;
+    vertical-align: middle;
 }
 
 /* --- Responsive Adjustments (Optional but Recommended) --- */
