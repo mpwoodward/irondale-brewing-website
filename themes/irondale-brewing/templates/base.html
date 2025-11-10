@@ -183,11 +183,194 @@
     <script>
         // 1. Initialize Pagefind UI (Runs immediately after script loads)
         new PagefindUI({
-            element: "#pagefind-search-container", 
+            element: "#pagefind-search-container",
             showImages: false,
             autofocus: false,
+            styles: {
+                // Minimal, targeted styles injected into Pagefind's shadow DOM.
+                // Keep only what is necessary to ensure internal scrolling works.
+                "bundle": `
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+
+                    /* Ensure the inner results-area has breathing room at the bottom
+                       so buttons rendered there (like "Load more results") are not
+                       flush with the viewport. This targets the component's
+                       internal class from the shadow DOM. */
+                          /* Target the drawer and results-area to ensure space at the
+                              bottom of the scrollable area. Use !important to override
+                              any internal rules that might otherwise cancel the spacing. */
+                          .pagefind-ui__drawer { padding-bottom: 48px !important; }
+                          .pagefind-ui__results-area { padding-bottom: 48px !important; }
+
+                          /* Add a small margin to Pagefind buttons as well */
+                          .pagefind-ui__button { margin-bottom: 12px !important; }
+                `,
+                "form": `flex-shrink: 0;`,
+                "results": `flex-grow: 1; overflow-y: auto; min-height: 0; padding-bottom: 40px;`
+            }
             // baseUrl is omitted as per your working configuration
         });
+
+        // Ensure there's always a small spacer at the end of the results area
+        // inside Pagefind's shadow DOM. Some Pagefind builds re-render the
+        // results and may replace nodes, so we both try immediately and set
+        // up a MutationObserver to re-apply the spacer when results change.
+        const ensurePagefindSpacer = () => {
+            const container = document.getElementById('pagefind-search-container');
+            const host = container && container.querySelector('pagefind-ui');
+            if (!host) return false;
+            const sr = host.shadowRoot;
+            if (!sr) return false;
+            const drawer = sr.querySelector('.pagefind-ui__drawer') || sr.querySelector('.pagefind-ui__results-area');
+            if (!drawer) return false;
+            if (!sr.querySelector('.copilot-spacer')) {
+                const spacer = document.createElement('div');
+                spacer.className = 'copilot-spacer';
+                spacer.style.height = '48px';
+                spacer.style.display = 'block';
+                spacer.style.pointerEvents = 'none';
+                drawer.appendChild(spacer);
+            }
+            return true;
+        };
+
+        const startPagefindSpacerWatcher = () => {
+            const container = document.getElementById('pagefind-search-container');
+            const host = container && container.querySelector('pagefind-ui');
+            if (!host || !host.shadowRoot) return;
+            const sr = host.shadowRoot;
+            const drawer = sr.querySelector('.pagefind-ui__drawer') || sr.querySelector('.pagefind-ui__results-area');
+            if (!drawer) return;
+            if (window.__pagefindSpacerObserver) return;
+            const obs = new MutationObserver(() => {
+                ensurePagefindSpacer();
+            });
+            obs.observe(drawer, { childList: true, subtree: true });
+            window.__pagefindSpacerObserver = obs;
+        };
+
+        // Try immediately and again shortly after (to catch late renders)
+        ensurePagefindSpacer();
+        setTimeout(() => { ensurePagefindSpacer(); startPagefindSpacerWatcher(); }, 300);
+
+        // Robustly inject a style into Pagefind's open shadowRoot. Some builds
+        // render asynchronously; retry a few times until the target element
+        // exists. This ensures `.pagefind-ui__results-area` receives padding.
+        const injectShadowStyles = (opts = {}) => {
+            const maxAttempts = opts.maxAttempts || 30;
+            const interval = opts.interval || 200;
+            let attempts = 0;
+
+            const tryInject = () => {
+                attempts += 1;
+                const container = document.getElementById('pagefind-search-container');
+                const host = container && container.querySelector('pagefind-ui');
+                if (!host) {
+                    if (attempts < maxAttempts) return setTimeout(tryInject, interval);
+                    return false;
+                }
+                const sr = host.shadowRoot;
+                if (!sr) {
+                    if (attempts < maxAttempts) return setTimeout(tryInject, interval);
+                    return false;
+                }
+
+                // If style already injected, nothing to do
+                if (sr.getElementById('copilot-pagefind-style')) return true;
+
+                // Wait until the results-area exists inside the shadowRoot
+                const resultsArea = sr.querySelector('.pagefind-ui__results-area');
+                if (!resultsArea && attempts < maxAttempts) return setTimeout(tryInject, interval);
+
+                try {
+                    const s = document.createElement('style');
+                    s.id = 'copilot-pagefind-style';
+                    s.textContent = `
+                        .pagefind-ui__results-area { padding-bottom: 48px !important; }
+                        .pagefind-ui__drawer { padding-bottom: 48px !important; }
+                        .pagefind-ui__button { margin-bottom: 12px !important; }
+                    `;
+                    sr.appendChild(s);
+                    return true;
+                } catch (err) {
+                    if (attempts < maxAttempts) return setTimeout(tryInject, interval);
+                    return false;
+                }
+            };
+
+            tryInject();
+        };
+
+        // Kick off injection attempts now and when the overlay opens
+        injectShadowStyles();
+
+        // Fallback: Pagefind may render its DOM directly inside
+        // #pagefind-search-container (no custom element). Watch that
+        // container and apply padding/margins to the results-area/button
+        // once they're created. This mirrors the DevTools edit you found
+        // effective.
+        const applyResultsAreaPadding = (root = document) => {
+            try {
+                const container = document.getElementById('pagefind-search-container');
+                if (!container) return false;
+
+                // look for results-area(s) inside the container (light DOM)
+                const resultsAreas = container.querySelectorAll('.pagefind-ui__results-area');
+                resultsAreas.forEach(el => {
+                    el.style.paddingBottom = '48px';
+                    el.style.boxSizing = 'border-box';
+                });
+
+                const drawers = container.querySelectorAll('.pagefind-ui__drawer');
+                drawers.forEach(el => el.style.paddingBottom = '24px');
+
+                const buttons = container.querySelectorAll('.pagefind-ui__button');
+                buttons.forEach(el => el.style.marginBottom = '12px');
+
+                return resultsAreas.length > 0 || drawers.length > 0 || buttons.length > 0;
+            } catch (err) {
+                return false;
+            }
+        };
+
+        // Observe the container for added nodes and apply styles when the
+        // Pagefind structure appears in the light DOM.
+        (function watchContainerForPagefind() {
+            const container = document.getElementById('pagefind-search-container');
+            if (!container) return;
+            // Apply immediately in case elements are already present
+            applyResultsAreaPadding();
+
+            const obs = new MutationObserver((mutations) => {
+                // Try to apply whenever children change
+                if (applyResultsAreaPadding()) {
+                    // once applied, keep applying on future mutations (Pagefind
+                    // may re-render), so we don't disconnect the observer
+                }
+            });
+
+            obs.observe(container, { childList: true, subtree: true });
+            // store so other code can disconnect later if needed
+            window.__pagefindContainerObserver = obs;
+        })();
+
+        // If the user clicks the internal "Load more results" button, nudge
+        // the overlay scroll so the button isn't flush with the viewport bottom.
+        // We listen on the document so this works even if the button is rendered
+        // inside Pagefind's shadow DOM (the click will bubble as a composed event).
+        document.addEventListener('click', (ev) => {
+            const btn = ev.target.closest && ev.target.closest('.pagefind-ui__button');
+            if (!btn) return;
+            const container = document.getElementById('pagefind-search-container');
+            if (!container) return;
+            // Slight delay to allow Pagefind to append new items before nudging scroll
+            setTimeout(() => {
+                // Nudge overlay scroll by 48px so there's breathing room below the button
+                container.scrollBy({ top: 48, left: 0, behavior: 'smooth' });
+            }, 150);
+        }, true);
 
         // 2. Define the toggle function in the global scope (Accessible by inline onclick)
         const toggleSearchModal = (e) => {
@@ -202,10 +385,35 @@
                 searchContainer.classList.toggle('is-open');
 
                 if (searchContainer.classList.contains('is-open')) {
-                    // Actions when OPENING: Focus input and close mobile menu
+                    // --- Actions when OPENING ---
+                    // 1. Prevent body from scrolling
+                    document.body.classList.add('no-scroll');
+                    // 2. Focus input and close mobile menu
                     searchContainer.querySelector('.pagefind-ui__search-input')?.focus();
                     document.getElementById('primary-nav')?.classList.remove('is-active');
                     document.getElementById('hamburger-btn')?.setAttribute('aria-expanded', 'false');
+                    // 3. Ensure the Pagefind shadow-root has our spacer/style
+                    try {
+                        ensurePagefindSpacer();
+                        startPagefindSpacerWatcher();
+                        const host = searchContainer.querySelector('pagefind-ui');
+                        if (host && host.shadowRoot && !host.shadowRoot.getElementById('copilot-pagefind-style')) {
+                            const s = document.createElement('style');
+                            s.id = 'copilot-pagefind-style';
+                            s.textContent = `
+                                .pagefind-ui__drawer { padding-bottom: 48px !important; }
+                                .pagefind-ui__results-area { padding-bottom: 48px !important; }
+                                .pagefind-ui__button { margin-bottom: 12px !important; }
+                            `;
+                            host.shadowRoot.appendChild(s);
+                        }
+                    } catch (err) {
+                        // ignore - best-effort only
+                    }
+                } else {
+                    // --- Actions when CLOSING ---
+                    // 1. Re-enable body scrolling
+                    document.body.classList.remove('no-scroll');
                 }
             }
         };
