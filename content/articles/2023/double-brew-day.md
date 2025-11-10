@@ -13,10 +13,10 @@ I'll co-opt a David Foster Wallace book title and file this one under "<a href="
 
 On paper, it makes sense. You're standing there doing all the brewing stuff anyway, why not make two batches for the same elapsed time? Easy enough with small batch brewing!
 
-Further rationalizing, I told myself that summer was getting away from me and I had a Kolsch and a Pale Ale to make, and this was the only way it was going to happen before "The Big Dark" here in the Pacific Northwest. And I'll be smart and stagger the starts of the batches, that way I won't have to do the same thing to both batches at the same time. Easy peasy!
+Further rationalizing, I told myself that summer was getting away from me and I had a Kölsch and a Pale Ale to make, and this was the only way it was going to happen before "The Big Dark" here in the Pacific Northwest. And I'll be smart and stagger the starts of the batches, that way I won't have to do the same thing to both batches at the same time. Easy peasy!
 
 Well, best laid plans and all that. It wasn't TOO terribly bad, but there was definitely a hectic crunch in the middle with the timing of things when two different things had to happen to both batches more or less at the same time.
 
 No major catastrophes but once you factor in the increased chaos and stress and double the cleaning, I doubt this is something I'll do again.
 
-Both beers were kits from <a href="https://socohomebrew.com/" target="_blank" rel="noopener">SoCo Homebrew</a> and since I'm posting this way after the fact (just getting the website going in late 2023), I can report that the Pale Ale came out a lot better than the Kolsch. I don't think anything went wrong with the Kolsch exactly, i.e., no weird off-flavors that could be attributed to infection, fermentation seemed good, I just didn't care that much for the end result. The Pale Ale was pretty good and didn't last long.
+Both beers were kits from <a href="https://socohomebrew.com/" target="_blank" rel="noopener">SoCo Homebrew</a> and since I'm posting this way after the fact (just getting the website going in late 2023), I can report that the Pale Ale came out a lot better than the Kölsch. I don't think anything went wrong with the Kölsch exactly, i.e., no weird off-flavors that could be attributed to infection, fermentation seemed good, I just didn't care that much for the end result. The Pale Ale was pretty good and didn't last long.

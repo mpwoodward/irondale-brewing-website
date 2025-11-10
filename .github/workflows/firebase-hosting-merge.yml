@@ -23,32 +23,18 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Install libssl1.1 Dependency
-        run: |
-          DEB_FILE="libssl1.1_1.1.1f-1ubuntu2.24_amd64.deb"
-          DEB_URL="http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/${DEB_FILE}"
-
-          curl -LO ${DEB_URL}
-          sudo dpkg -i ${DEB_FILE}
-          sudo apt-get install -f -y
-          rm -f ${DEB_FILE}
-    
-      - name: Install Stork Binary for Search
-        run: |
-          # Download and install the latest Stork binary for Linux
-          STORK_VERSION="1.6.0"
-          DOWNLOAD_FILE="stork-ubuntu-20-04"
-          STORK_URL="https://files.stork-search.net/releases/v${STORK_VERSION}/${DOWNLOAD_FILE}"
-
-          curl -LO ${STORK_URL}
-          chmod +x ${DOWNLOAD_FILE}
-          sudo mv ${DOWNLOAD_FILE} /usr/local/bin/stork
-
-          # Verify installation
-          stork --version
+      - name: Set up Node.js (npm)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
 
       - name: Generate Pelican Site (Build)
         run: pelican content -s publishconf.py
+
+      - name: Index Site with Pagefind
+        run: |
+          # Index the generated site output with Pagefind via npx (no global install)
+          npx --yes @pagefind/cli --source output --output output/pagefind
 
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0

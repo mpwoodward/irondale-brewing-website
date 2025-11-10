@@ -41,4 +41,8 @@
             </figure>
         </div>
     </div>
+
+    <div style="display: none;" data-pagefind-body data-pagefind-meta="title:{{ page.title|striptags}}">
+        {{ page.content|safe }}
+    </div>
 {% endblock main_content_area %}

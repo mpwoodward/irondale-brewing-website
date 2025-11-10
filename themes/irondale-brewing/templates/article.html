@@ -13,9 +13,12 @@
 {% endblock %}
 
 {% block content %}
-  <article>
+  <article data-pagefind-body>
     <header>
-      <h2>{{ article.title }}</h2>
+  <h2 data-pagefind-meta="title">{{ article.title }}</h2>
+  {# Provide a machine-readable date for Pagefind to index and allow sorting/recency boosts. #}
+  {# Include the same date as a sort key so Pagefind can precompute date-based ordering at index time. #}
+  <div style="display:none;" data-pagefind-meta="date:{{ article.modified.isoformat() if article.modified else article.date.isoformat() }}" data-pagefind-sort="date:{{ article.modified.isoformat() if article.modified else article.date.isoformat() }}"></div>
       <div class="article-subtitle">
         <time datetime="{{ article.date.isoformat() }}">{{ article.date.strftime('%b %d, %Y') }}</time>
         {% if article.category %}

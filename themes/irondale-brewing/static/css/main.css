@@ -11,6 +11,12 @@ html, body {
     -webkit-font-smoothing: antialiased;
 }
 
+/* Utility class to prevent scrolling on the body when an overlay is active */
+.no-scroll {
+    overflow: hidden !important;
+    height: 100% !important;
+}
+
 div {
     margin: 0;
     padding: 0;
@@ -751,208 +757,146 @@ article img {
     color: #e94558 !important;
 }
 
-/* --- SEARCH OVERLAY STYLES --- */
-.stork-search-overlay {
-    /* FIX 1: Position overlay fixed to cover the screen */
+/* --- PAGEFIND STYLES --- */
+#pagefind-search-container {
+    /* Full screen overlay */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    
-    /* Style: Dark background, high z-index */
-    background: rgba(0, 0, 0, 0.95); 
+    background: rgba(0, 0, 0, 0.95);
     z-index: 9999;
     
-    /* Layout: Center the input wrapper */
-    display: flex; 
-    align-items: flex-start; /* Start content near the top */
-    justify-content: center;
-    padding-top: 50px;
+    display: none !important;
+
+    --pagefind-ui-text: #fff;
+    --pagefind-ui-primary: #e94558;
+    --pagefind-ui-background: transparent;
+    --pagefind-ui-border: #333;
     
-    /* FIX 2: Hide by default, controlled by JS class toggle */
-    opacity: 0;
-    pointer-events: none; /* Ignore clicks when hidden */
-    transition: opacity 0.3s ease-in-out;
+    /* Center the Pagefind UI element inside */
+    justify-content: center; /* Horizontally center the content */
+    align-items: flex-start; /* Align content to the top of the container */
+     padding-top: 50px; /* Push the content down from the top edge */
+     /* Add some bottom padding so items at the end of the results (like the
+         "Load more results" button) don't sit flush against the viewport edge */
+     padding-bottom: 40px;
+    
+    /* Ensure the search box itself is correctly positioned */
+    box-sizing: border-box;
+    /* Allow the overlay to scroll if the inner content grows taller than the viewport
+       (this lets the user scroll the overlay when Pagefind internal scrolling doesn't
+       capture the extra results for any reason) */
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
-.stork-search-overlay.is-active {
-    opacity: 1;
-    pointer-events: all; /* Allow clicks when active */
-}
+/* Show the container when the .is-open class is added by JS */
+#pagefind-search-container.is-open {
+    display: flex !important; /* Use flex to center the content */
+} 
 
-.stork-search-wrapper {
+/* NEW: Restore styles for the <pagefind-ui> HOST element */
+/* This controls the component's size and position on the page */
+.pagefind-ui {
     width: 90%;
     max-width: 600px;
     position: relative;
-    padding: 0 10px;
+    background-color: transparent;
+
+    /* Use max-height instead of a hard height so the component can grow/shrink
+       naturally inside the overlay and allow the overlay itself to scroll when
+       results expand. Make this a flex column so the internal "results" area can
+       properly use flex-grow/overflow. */
+    display: flex;
+    flex-direction: column;
+    min-height: 0; /* critical for flex children to allow overflow to work */
+    max-height: calc(100vh - 100px);
+    /* Ensure internal padding is included inside the max-height and
+       provide breathing room at the bottom of the host element. */
+    box-sizing: border-box;
+    padding-bottom: 48px;
 }
 
-/* Close button for the search overlay */
-#search-close-btn {
-    position: absolute;
-    top: -20px; 
-    right: 0px;
-    color: #fff;
-    font-size: 30px;
-    cursor: pointer;
-    background: none;
-    border: none;
-    font-family: 'Material Symbols Outlined'; 
-    padding: 0;
-    line-height: 1;
+.pagefind-ui__result {
+    padding-top: 10px !important;
+    padding-bottom: 14px !important;   
 }
 
-.stork-search-wrapper input[data-stork] {
-    font-size: 24px;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-
-    /* FIX: Ensure 100% width by using padding-left/right of 0 */
-    width: 100%; 
-    padding: 15px 0; /* Vertical padding, NO horizontal padding */
-    
-    border: none;
-    border-bottom: 2px solid #e94558;
-    background-color: transparent; /* Set background to transparent to allow contrast */
-    color: #333;
-    
-    /* ADD: Remove the default gray background from Stork's basic.css */
-    background-image: none;
-    
-    outline: none;
-    box-shadow: none;
-    box-sizing: border-box; /* Crucial for width calculations */
-}
-
-/* Results Container */
-div[data-stork="sitesearch-output"] {
-    margin-top: 25px; 
-    padding: 0;
-    
-    /* FIX: Switch to dark background, remove border */
-    background-color: #171717;
-    border: none; 
-    
-    border-radius: 4px;
-    max-height: 70vh;
-    overflow-y: auto;
-    
-    /* FIX: White text by default for contrast */
-    color: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-}
-
-div[data-stork="sitesearch-output"]:empty {
-    /* If you want to hide it completely when empty: */
-    /* display: none; */ 
-    
-    /* Alternatively, if you want to keep the box but remove clutter: */
-    border: none;
-    box-shadow: none;
-    margin-top: 0;
-}
-
-/* Style for individual result items (the box containing text) */
-.stork-results .stork-result {
-    padding: 20px 20px; /* INCREASED: Generous padding for readability */
-    border-bottom: 1px solid #333; /* Darker border for separation */
-    transition: background-color 0.2s;
-    cursor: pointer;
-    
-    /* FIX: Increase font size for readability */
-    font-family: 'Roboto', sans-serif; 
-    font-size: 1.1em; /* Increased from 0.9em */
-    line-height: 1.6; /* Increased line height */
-    color: #fff; /* Ensure text is white */
-}
-
-.stork-result a {
-    /* Ensure the entire result box is clickable and remove default link colors/underlines */
-    display: block;
-    text-decoration: none;
-    color: inherit;
-}
-
-.stork-results .stork-result:last-child {
-    border-bottom: none; /* Remove border from the last item */
-}
-
-.stork-results .stork-result:hover {
-    background-color: #333; /* Dark gray hover effect */
-}
-
-/* Style the result TITLE (if present) */
-.stork-result .stork-title p {
+.pagefind-ui__result-title {
     font-family: 'Oswald', sans-serif;
     font-size: 1.3em; /* Slightly larger heading */
     font-weight: 700;
-    color: #fff; /* White title text */
     margin: 0;
     padding-bottom: 8px;
 }
 
-/* Style the result SNIPPET (the actual matching text) */
-.stork-results .stork-result-text {
-    font-family: 'Roboto', sans-serif; 
-    font-size: 0.9em;
-    color: #333; /* Darker text for contrast */
+.pagefind-ui__result-link {
+    color: #e94558 !important;
+    text-decoration: none;
+    display: block;
 }
 
-/* Style the text highlights (the green boxes in your screenshot) */
-.stork-results .stork-match {
-    background-color: #ffde5c !important; /* Force highlight color */
-    color: #333 !important; /* Ensure highlight text is dark */
-    padding: 2px 4px;
-    border-radius: 2px;
-    font-weight: 700;
+.pagefind-ui__result-excerpt {
+    margin-top: 10px;
 }
 
-.stork-result .stork-excerpt-container {
-    margin-top: 10px; 
-}
-
-.stork-result .stork-excerpt p {
-    font-size: 1em; /* Increased font size */
+.pagefind-ui__result-excerpt p {
+    font-size: 1em;
     line-height: 1.5;
-    color: #fff; /* White text for contrast */
-    margin: 0 0 10px 0; /* More spacing between paragraphs */
+    color: #fff !important;
+    margin: 0 0 10px 0;
 }
 
-.stork-result .stork-highlight {
-    background-color: #e94558 !important; /* FIX: Use your accent red for highlighting */
-    color: #fff !important; /* White text on red background */
+.pagefind-ui__result-excerpt mark {
+    background-color: #e94558 !important;
+    color: #fff;
     padding: 3px 5px;
     border-radius: 2px;
     font-weight: 700;
 }
 
-/* Style the footer/attribution (the "Stork" link) */
-.stork-footer {
-    padding: 10px 20px;
-    text-align: right;
-    border-top: 1px solid #333;
-    background-color: #171717; /* Ensure footer background matches box */
+/* Style the Pagefind result tags (date pill) so they are readable on the
+   dark overlay. This covers the light-DOM rendering case. If Pagefind renders
+   into a shadowRoot the same rules are injected at runtime from the template. */
+.pagefind-ui__result-tag {
+    background-color: rgba(255,255,255,0.06) !important;
+    color: #fff !important;
+    padding: 4px 8px !important;
+    border-radius: 6px !important;
+    font-weight: 700 !important;
 }
 
-.stork-footer a {
-    color: #45a1e9 !important; /* Light blue link color for visibility */
-    text-decoration: none;
-    font-size: 0.85em;
-}
-
-/* Ensure the close button is visible and clear */
-#search-close-btn {
-    /* Existing: position: absolute; top: -20px; right: 0px; color: #fff; */
-    
-    font-size: 30px;
-    
-    /* ADD: Ensures the X icon is visually clean and clickable */
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
-    
-    /* ADD: Slight margin from the edge of the screen on small devices */
+.pagefind-close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
     padding: 10px;
+    z-index: 10000;
+    padding: 10px;
+    transition: color 0.2s;
 }
+
+.pagefind-close-button .material-symbols-outlined {
+    font-size: 30px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 700,
+        'GRAD' 0,
+        'opsz' 24;
+}
+
+.pagefind-close-button:hover {
+    color: #e94558;
+}
+
+/* Date pill removed from UI: date remains in page metadata for indexing/sorting
+   but is not displayed in search results. */
 
 /* --- Responsive Adjustments (Optional but Recommended) --- */
 

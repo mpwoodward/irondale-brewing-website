@@ -9,3 +9,4 @@ Template: contact
 PageHeaderImageOpacity: 0.6
 Status: published
 
+This is the official contact page for Irondale Brewing. We welcome questions regarding homebrewing, recipes, and collaboration ideas.

@@ -5,5 +5,4 @@ requests
 pelican-liquid-tags
 pelican-more-categories
 pelican-photos
-pelican-search
 python-slugify

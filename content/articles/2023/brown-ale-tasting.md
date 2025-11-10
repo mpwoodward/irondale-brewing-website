@@ -9,7 +9,7 @@ Status: published
 
 ![Photo of a Smokey the Bear pint glass containing brown ale](/images/2023/11/PXL_20231120_015844316.PORTRAIT-980x1301.jpg)
 
-I'm trying <a href="https://socohomebrew.com/" target="_blank" rel="noopener">SoCo Homebrew'</a>s Brown Ale kit after about a week in the keg, and it came out pretty great. I have a couple more of SoCo's one-gallon all-grain kits on hand, specifically their Black IPA and Stout, and other than me not really caring for the Kolsch they've all come out really well.
+I'm trying <a href="https://socohomebrew.com/" target="_blank" rel="noopener">SoCo Homebrew'</a>s Brown Ale kit after about a week in the keg, and it came out pretty great. I have a couple more of SoCo's one-gallon all-grain kits on hand, specifically their Black IPA and Stout, and other than me not really caring for the Kölsch they've all come out really well.
 
 This brown ale is rich and malty, with a nice creamy body, and just enough bitterness from the Willamette hops to balance things out without being in your face, which is what you want from a brown ale in my book.
 
