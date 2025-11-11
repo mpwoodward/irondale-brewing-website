@@ -39,27 +39,27 @@ header {
     background: transparent;
 }
 
-header, footer {
+header,
+footer {
     flex-shrink: 0;
 }
 
-h1 {
+h1, h2, h3 {
     font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
-    font-size: 40px;
     color: #333;
 }
 
+h1 {
+    font-size: 40px;
+}
+
 h2 {
-    font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
     font-size: 26px;
-    color: #333;
     padding-bottom: 10px;
 }
 
 h3 {
-    font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
     font-size: 22px;
-    color: #333;
     padding-bottom: 10px;
 }
 
@@ -89,7 +89,8 @@ a {
     color: #e94558;
 }
 
-a, a:hover {
+a,
+a:hover {
     text-decoration: none;
 }
 
@@ -1076,13 +1077,6 @@ article img {
         display: none !important;
     }
 
-    /* Stack the menu items vertically (unchanged) */
-    .primary-menu-nav ul {
-        flex-direction: column;
-        width: 100%;
-        margin: 0;
-    }
-
     .primary-menu-nav ul li {
         width: 100%;
         padding: 0;
@@ -1106,29 +1100,6 @@ article img {
         display: block; 
     }
 
-    /* Hide the desktop search icon that sits inside the list */
-    .search-desktop-item {
-        display: none !important;
-    }
-
-    /* Stack the menu items vertically (unchanged) */
-    .primary-menu-nav ul {
-        flex-direction: column;
-        width: 100%;
-        margin: 0;
-    }
-
-    .primary-menu-nav ul li {
-        width: 100%;
-        padding: 0;
-        border-top: 1px solid #333;
-    }
-
-    .primary-menu-nav ul li a {
-        padding: 15px;
-        display: block; 
-    }
-
     /* stack footer content */
     .footer-row {
         display: block !important;
@@ -1138,7 +1109,8 @@ article img {
         padding: 10px 0;
     }
 
-    .footer-column-left, .footer-column-right {
+    .footer-column-left,
+    .footer-column-right {
         float: left !important;
         width: 100% !important;
         display: block !important;
