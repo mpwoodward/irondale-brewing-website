@@ -187,14 +187,12 @@
         // Note: Pagefind supports sorting by a single sort key (e.g. { date: 'desc' }) but
         // using `sort` will override ranking by relevance entirely. For the hybrid behavior
         // (relevance primary; date as a tiebreaker) we index a `date` sort key (see templates)
-        // and keep ranking tuned here. If you'd like the strict "relevance then date" tie-break
-        // behavior we can implement a small custom post-sort in JS to reorder results with equal
-        // scores — happy to add that on request.
+        // and keep ranking tuned here.
         new PagefindUI({
             element: "#pagefind-search-container",
             showImages: false,
             autofocus: false,
-            // Ranking tweaks – these are small, non-disruptive adjustments. Keep or tune as you like.
+            // Ranking tweaks
             ranking: {
                 // Defaults are shown in docs; we leave most as-is but you can tune these values.
                 termFrequency: 1.0,
@@ -210,11 +208,53 @@
             // the HTML templates for sorting, but don't display it in the UI.
             processResult: function(result) {
                 try {
+                    // Attempt to obtain a date from metadata first, then fall back to
+                    // any precomputed _date_iso, and finally try to parse a friendly
+                    // date out of the excerpt text (e.g., "Nov 20, 2023"). This covers
+                    // pages where Pagefind didn't capture a meta.date during indexing.
+                    let found = null;
+
                     if (result && result.meta && result.meta.date) {
+                        found = result.meta.date;
+                        if (!result._date_iso) result._date_iso = result.meta.date;
+                        // remove from meta so Pagefind won't auto-render it
                         delete result.meta.date;
+                    } else if (result && result._date_iso) {
+                        found = result._date_iso;
+                    } else if (result && result.excerpt && typeof result.excerpt === 'string') {
+                        // Look for a date like 'Nov 20, 2023' in the excerpt (common when
+                        // the template includes a visible <time> element inside the body).
+                        const m = result.excerpt.match(/([A-Z][a-z]{2,8}\s+\d{1,2},\s*\d{4})/);
+                        if (m) {
+                            found = m[1];
+                            // remove the matched date and any surrounding separators from excerpt
+                            result.excerpt = result.excerpt.replace(m[0], '').replace(/\s*\|\s*/g, ' ').trim();
+                        }
+                    }
+
+                    if (found) {
+                        // Try parsing as an ISO string, fall back to using the found
+                        // value as-is (it may already be formatted).
+                        let formatted = '';
+                        const parsed = new Date(found);
+                        if (!isNaN(parsed)) {
+                            const opts = { year: 'numeric', month: 'short', day: 'numeric' };
+                            formatted = parsed.toLocaleDateString(undefined, opts);
+                        } else {
+                            formatted = found;
+                        }
+
+                        const pill = `<div class="pagefind-ui__result-meta-pills"><span class="pagefind-date-pill">${formatted}</span></div>`;
+                        // Remove any previously-injected wrapper to avoid duplicates
+                        if (result.excerpt && typeof result.excerpt === 'string') {
+                            result.excerpt = result.excerpt.replace(/<div class=\"pagefind-ui__result-meta-pills\">[\s\S]*?<\/div>/g, '');
+                            result.excerpt = result.excerpt + pill;
+                        } else {
+                            result.excerpt = pill;
+                        }
                     }
                 } catch (e) {
-                    // best-effort only
+                    // best-effort only; leave result unchanged on error
                 }
                 return result;
             },
@@ -225,7 +265,10 @@
                 "form": `flex-shrink: 0;`,
                 "results": `flex-grow: 1; overflow-y: auto; min-height: 0; padding-bottom: 40px; 
                     /* Make the metadata/tag/pill readable on the dark overlay (shadow DOM case) */
-                    .pagefind-ui__result-tag { background-color: rgba(255,255,255,0.06); color: #fff; padding: 4px 8px; border-radius: 6px; font-weight: 700; }`
+                    .pagefind-ui__result-tag { background-color: rgba(255,255,255,0.06); color: #fff; padding: 4px 8px; border-radius: 6px; font-weight: 700; }
+                    /* Meta wrapper and date pill */
+                    .pagefind-ui__result-meta-pills { display:block; margin-top:6px; }
+                    .pagefind-date-pill { display: inline-block; margin-left: 0; padding: 3px 8px; background-color: rgba(255,255,255,0.06); color: #fff; border-radius: 6px; font-weight: 700; font-size: 0.85em; vertical-align: middle; }`
             }
             // baseUrl is omitted as per your working configuration
         });

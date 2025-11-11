@@ -895,8 +895,23 @@ article img {
     color: #e94558;
 }
 
-/* Date pill removed from UI: date remains in page metadata for indexing/sorting
-   but is not displayed in search results. */
+/* Date pill styling for search results: shown under the excerpt/title when
+   Pagefind provides a date. This keeps the pill readable on the dark overlay. */
+.pagefind-ui__result-meta-pills {
+    display: block;
+    margin-top: 6px;
+}
+.pagefind-date-pill {
+    display: inline-block;
+    margin-left: 0;
+    padding: 3px 8px;
+    background-color: rgba(255,255,255,0.06) !important;
+    color: #fff !important;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    vertical-align: middle;
+}
 
 /* --- Responsive Adjustments (Optional but Recommended) --- */
 
