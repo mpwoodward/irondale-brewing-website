@@ -20,7 +20,11 @@ PAGE_PATHS = ["pages"]
 
 # Directories that contain static files (like images) that should be copied
 # directly to the output without being processed as content.
-STATIC_PATHS = ["images"]
+STATIC_PATHS = ["images", "extra"]
+
+EXTRA_PATH_METADATA = {
+    "extra/robots.txt": {"path": "robots.txt"},
+}
 
 TIMEZONE = "America/Los_Angeles"
 DEFAULT_LANG = "en"
@@ -59,6 +63,7 @@ PLUGINS = [
     "liquid_tags",
     "photos",
     "more_categories",
+    "sitemap",
 ]
 
 # Pelican Liquid Tags configuration
@@ -77,6 +82,21 @@ PHOTO_GALLERY = (1024, 768, 80) # (width, height, quality)
 PHOTO_THUMBNAIL = (280, 210, 80) # (width, height, quality)
 PHOTO_RESIZE_JOBS = 5 # Number of parallel jobs to resize images
 PHOTO_LIGHTBOX_GALLERY_ATTR = "data-lightgallery" # To integrate with lightgallery.js
+
+# Sitemap
+SITEMAP = {
+    "format": "xml",
+    "priorities": {
+        "articles": 0.5,
+        "indexes": 0.5,
+        "pages": 0.5,
+    },
+    "changefreqs": {
+        "articles": "monthly",
+        "indexes": "daily",
+        "pages": "monthly",
+    },
+}
 
 # Make the current year available to templates
 JINJA_GLOBALS = {"CURRENT_YEAR": date.today().year}
