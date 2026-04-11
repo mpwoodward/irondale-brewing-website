@@ -69,11 +69,11 @@ The subtle complexity of this beer and not having any on-hand to drink makes rec
 
 ## 2011 Homebrew Recipe from Deschutes Website
 
-![2011 Homebrew Recipe from Deschutes Website][/images/2026/deschutes_twilight_summer_ale_clone_recipe_2011.png]
+![2011 Homebrew Recipe from Deschutes Website](/images/2026/deschutes_twilight_summer_ale_clone_recipe_2011.png)
 
 ## 2015 Homebrew Recipe from Deschutes Website
 
-![2015 Homebrew Recipe from Deschutes Website][/images/2026/deschutes_twilight_summer_ale_clone_recipe_2015.png]
+![2015 Homebrew Recipe from Deschutes Website](/images/2026/deschutes_twilight_summer_ale_clone_recipe_2015.png)
 
 ## My Interpretation
 
@@ -144,7 +144,7 @@ Not a lot to note here – I mashed at 152F for 60 minutes and followed the hop 
 
 One thing to note about hops related to the final result: I use a steam condenser lid, and I’m still a bit hit or miss with experiencing “hop explosions” where the boil with the steam condenser lid is too aggressive so the hops wind up on the side of the kettle, instead of doing their full job in the wort.
 
-![Explosion of hops up the side of the BrewZilla][/images/2026/afterglow-hop-explosion.png]
+![Explosion of hops up the side of the BrewZilla](/images/2026/afterglow-hop-explosion.png)
 
 Obviously this isn’t great for hop utilization, so in the next batch I’ll drop the power from 55% down to 50% and see if that keeps the hop explosion from happening.
 
@@ -152,7 +152,7 @@ Obviously this isn’t great for hop utilization, so in the next batch I’ll dr
 
 I don’t know why I have to remind myself of this every time I use it, but S-04 is a beast. At 65F it went from 1.051 OG to 1.011 in two days.
 
-![Fermentation chart from Brewfather][/images/2026/afterglow-fermentation-chart.png]
+![Fermentation chart from Brewfather](/images/2026/afterglow-fermentation-chart.png)
 
 When the gravity hit 1.018 I raised the temp to 70F for a diacetyl rest, and then dropped the temp to 60F for a two-day dry hop before cold crashing.
 
@@ -162,7 +162,7 @@ We’ll also revisit the dry hop situation later.
 
 Here’s my “Afterglow Pale Ale.”
 
-![Afterglow Pale Ale in a pint glass][/images/2026/afterglow_in_the_glass.jpg]
+![Afterglow Pale Ale in a pint glass](/images/2026/afterglow_in_the_glass.jpg)
 
 ## Appearance
 
